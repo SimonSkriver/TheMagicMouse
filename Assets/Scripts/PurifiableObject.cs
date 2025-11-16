@@ -1,38 +1,40 @@
-// PurifiableObject.cs (Upgraded with UnityEvent)
+// PurifiableObject.cs (Upgraded with Reset Functionality)
 using UnityEngine;
-using UnityEngine.Events; // Add this line!
+using UnityEngine.Events;
 
 public class PurifiableObject : MonoBehaviour
 {
     public GameObject corruptedVisuals;
-    public GameObject purifiedVisuals;
-    public bool disableColliderOnPurify = true;
+    public UnityEvent OnPurify;
 
-    public UnityEvent OnPurify; // --- THE NEW, IMPORTANT PART ---
+    // We remove the other variables as they are not needed for this setup.
 
-    private bool isPurified = false;
+    private bool canBePurified = true;
 
-    private void Start()
-    {
-        corruptedVisuals.SetActive(true);
-        if (purifiedVisuals != null) purifiedVisuals.SetActive(false);
-    }
-
+    // This is the public method our pulse will call.
     public void Purify()
     {
-        if (isPurified) return;
-        isPurified = true;
+        if (!canBePurified) return;
 
-        corruptedVisuals.SetActive(false);
-        if (purifiedVisuals != null) purifiedVisuals.SetActive(true);
+        canBePurified = false; // Prevent spamming while the event is firing.
 
-        if (disableColliderOnPurify)
+        if (corruptedVisuals != null)
         {
-            Collider2D col = GetComponent<Collider2D>();
-            if (col != null) col.enabled = false;
+            corruptedVisuals.SetActive(false);
         }
 
-        // Fire the event!
         OnPurify.Invoke();
+    }
+
+    // --- THE NEW METHOD ---
+    // A public method that other scripts (like our vine) can call to reset this object.
+    public void ResetPurifiable()
+    {
+        Debug.Log(gameObject.name + " has been reset and can be purified again.");
+        canBePurified = true;
+        if (corruptedVisuals != null)
+        {
+            corruptedVisuals.SetActive(true);
+        }
     }
 }
