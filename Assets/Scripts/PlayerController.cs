@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     [Header ("Components")]
     public Rigidbody2D rb;
     public SpriteRenderer sr; 
+    public Animator anim;
 
     [Header ("Movement settings")]
     [SerializeField] float moveSpeed = 5f;
