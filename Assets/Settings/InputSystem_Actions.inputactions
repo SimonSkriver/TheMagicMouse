@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "InputSystem_Actions",
     "maps": [
         {
@@ -82,6 +83,15 @@
                     "type": "Button",
                     "id": "641cd816-40e6-41b4-8c3d-04687c349290",
                     "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Purify",
+                    "type": "Button",
+                    "id": "80cfbc7f-00c9-4b5e-9d6a-d5d325ec5cca",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -470,6 +480,17 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dcbd5219-3fe4-4c8f-a3e9-b530fbaf96f1",
+                    "path": "<Keyboard>/e",
+                    "interactions": "Hold(duration=0.9)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Purify",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
