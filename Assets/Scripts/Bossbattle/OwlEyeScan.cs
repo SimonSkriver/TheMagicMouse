@@ -24,14 +24,14 @@ public class OwlEyeScan : MonoBehaviour
     {
         Vector2 eyePosition = transform.position;
         Vector2 targetPosition = target.transform.position;
-        Vector2 forwardVector = transform.up;
+        Vector2 visionConeVector = Vector2.down;
 
         //Angle check
         Vector2 targetVector = (targetPosition - eyePosition).normalized;
-        float targetAngle = Vector2.Angle(forwardVector, targetVector);
+        float targetAngle = Vector2.Angle(visionConeVector, targetVector);
         if (targetAngle > detectionAngle * 0.5f) return;
         
-        //Raycast. If line hits a collider, that also has the tag Player then trigger attack
+        //Raycast. If line hits a collider, that also has the tag "Player" then trigger attack
         RaycastHit2D targetHit = Physics2D.Linecast(eyePosition, targetPosition, ~0); //~0 means it checks on all layers. We could add a layer mask if that makes more sense?
         if (targetHit.collider != null && targetHit.collider.CompareTag("Player"))
         {
