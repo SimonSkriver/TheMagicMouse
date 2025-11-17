@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9110792143888842023}
   - component: {fileID: 1022231427623713305}
-  - component: {fileID: 4577691865507625069}
+  - component: {fileID: 215388106891173964}
   m_Layer: 3
   m_Name: Purified_Mushroom
   m_TagString: Bouncy
@@ -80,8 +80,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.55639184, g: 0.3531061, b: 0.6509434, a: 1}
+  m_Sprite: {fileID: 8707991520257480276, guid: f665f957add571f48bf0a7dd1fcc7dff, type: 3}
+  m_Color: {r: 0.9960785, g: 0.9960785, b: 0.9960785, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -91,8 +91,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4577691865507625069
-BoxCollider2D:
+--- !u!70 &215388106891173964
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -125,18 +125,9 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.010400385, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1.2912171, y: 1}
-  m_EdgeRadius: 0
+  m_Offset: {x: -0.044572275, y: 2.87}
+  m_Size: {x: 8.9857235, y: 2.876291}
+  m_Direction: 1
 --- !u!1 &4538630592357917255
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,7 +156,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 40.93, y: -3.7, z: 0}
-  m_LocalScale: {x: 1.91, y: 1.24, z: 1}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9110792143888842023}
@@ -206,7 +197,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.07677889, y: 0.046067476}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -216,7 +207,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 7.7258797, y: 7.910148}
   m_EdgeRadius: 0
 --- !u!114 &7374541259827552836
 MonoBehaviour:
@@ -231,8 +222,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PurifiableObject
   corruptedVisuals: {fileID: 5263105709671109150}
-  purifiedVisuals: {fileID: 3190114666574334372}
-  disableColliderOnPurify: 0
   OnPurify:
     m_PersistentCalls:
       m_Calls:
@@ -339,8 +328,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.26162878, g: 0.09451762, b: 0.33962262, a: 1}
+  m_Sprite: {fileID: 380481833672287810, guid: 8e3589c074719994ca2da7a08dfc02bc, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
