@@ -17,12 +17,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float jumpingGravity;
     [SerializeField] float fallingGravity;
     [SerializeField] float wallSlideSpeed = 2f;
+    [SerializeField] Vector2 wallJumpPower = new Vector2(5f, 18f);
+    [SerializeField] float wallJumpLockDuration = 0.2f;
+    private float wallJumpLockTimer;
     private Vector2 moveInput;
     private bool jumpPressed;
     private bool jumpReleased;
     private int jumpsRemaining;
     private bool isWallSliding;
-
+    private float wallJumpDirection;
+    
     [Header ("Ground check settings")]
     public Transform groundCheck;
     public LayerMask groundLayer;
@@ -50,12 +54,17 @@ public class PlayerController : MonoBehaviour
         CheckGrounded();
         Flip();
         CheckWalled();
+        HandleWallJump();
     }
 
     void FixedUpdate()
     {
+        wallJumpLockTimer -= Time.fixedDeltaTime;
+        if (wallJumpLockTimer <= 0f)
+        {
+            HandleMovement();
+        }
         rb.gravityScale = targetGravity;
-        HandleMovement();
         HandleJumping();
         HandleWallSlide();
     }
@@ -96,6 +105,17 @@ public class PlayerController : MonoBehaviour
             isWallSliding = false;
         }
     } 
+
+    void HandleWallJump()
+    {
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && isWallSliding)
+        {
+            Debug.Log("Walljump called");
+            wallJumpDirection = isFacingRight ? -1 : 1;
+            rb.linearVelocity = new Vector2(wallJumpDirection * wallJumpPower.x, wallJumpPower.y);
+            wallJumpLockTimer = wallJumpLockDuration;
+        }
+    }
 
     void OnMove(InputValue value)
     {
