@@ -3,20 +3,40 @@ using UnityEngine.Rendering.Universal;
 
 public class OwlEyeScan : MonoBehaviour
 {
-    [SerializeField] protected GameObject target;
+    protected GameObject target;
+    [Header("Detection Variables")]
     [SerializeField] protected float detectionAngle = 90f;
     [SerializeField] protected float lightSoftness = 2f;
+
+    [Header("Attack Variables")]
+    [SerializeField] protected GameObject clawPrefab;
+    [SerializeField] protected float slamCooldownDuration = 2.5f;
+    [SerializeField] protected float slamCooldownTimer;
+    private bool onCooldown = true;
+
+
     private Light2D lightCone;
 
     void Awake()
     {
-        //Match spotlight angle to visionAngle
+        //Match spotlight angle to detectionAngle
         lightCone = GetComponent<Light2D>();
         lightCone.pointLightOuterAngle = detectionAngle;
         lightCone.pointLightInnerAngle = detectionAngle - lightSoftness;
+        //Set target to Player by using "Player" tag
+        target = GameObject.FindGameObjectWithTag("Player");
     }
-    void Update()
+    void FixedUpdate()
     {
+        if (onCooldown)
+        {
+        slamCooldownTimer += Time.deltaTime;
+        if (slamCooldownTimer >= slamCooldownDuration)
+            {
+                onCooldown = false;
+                slamCooldownTimer = 0f;
+            }
+        }
         DetectTarget();
     }
 
@@ -41,6 +61,12 @@ public class OwlEyeScan : MonoBehaviour
 
     void SlamAttack()
     {
-        Debug.Log("I SEE YOU");
+        if (onCooldown) return;
+
+        Debug.Log("SLAM!");
+        Instantiate(clawPrefab, target.transform.position, Quaternion.identity);
+        
+        onCooldown = true;
+        slamCooldownTimer = 0f;
     }
 }

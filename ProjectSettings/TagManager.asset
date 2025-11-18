@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Bouncy
+  - FinalBoss
   layers:
   - Default
   - TransparentFX
@@ -13,7 +14,7 @@ TagManager:
   - Water
   - UI
   - Ground
-  - Wall
+  - 
   - 
   - 
   - 
@@ -48,20 +49,11 @@ TagManager:
   - name: Floor
     uniqueID: 96908685
     locked: 0
-  - name: Hanger
-    uniqueID: 2486875325
-    locked: 0
-  - name: Hat
-    uniqueID: 278595699
-    locked: 0
   - name: Middleground
     uniqueID: 1715805103
     locked: 0
   - name: Foreground
     uniqueID: 1256354741
-    locked: 0
-  - name: Leaves
-    uniqueID: 782345431
     locked: 0
   m_RenderingLayers:
   - Default
