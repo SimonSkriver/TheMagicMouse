@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float wallSlideSpeed = 2f;
     [SerializeField] Vector2 wallJumpPower = new Vector2(5f, 18f);
     [SerializeField] float wallJumpLockDuration = 0.2f;
+    [SerializeField] float coyoteTime = 0.2f;
+    private float coyoteTimeCounter;
     private float wallJumpLockTimer;
     private Vector2 moveInput;
     private bool jumpPressed;
@@ -55,6 +57,7 @@ public class PlayerController : MonoBehaviour
         Flip();
         CheckWalled();
         HandleWallJump();
+        HandleCoyoteTime();
     }
 
     void FixedUpdate()
@@ -117,6 +120,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void HandleCoyoteTime()
+    {
+        if (isGrounded)
+        {
+            coyoteTimeCounter = coyoteTime;
+        }
+        else
+        {
+            coyoteTimeCounter -= Time.deltaTime;
+        }
+    }
+
     void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
@@ -126,14 +141,17 @@ public class PlayerController : MonoBehaviour
     {
         if (value.isPressed)
         {
-            if (isGrounded || jumpsRemaining > 0)
+            if (coyoteTimeCounter > 0 || jumpsRemaining > 0)
             {
                 jumpPressed = true;
+                if (!isGrounded && coyoteTimeCounter <= 0)
+                jumpsRemaining--;
             }
         }
         else // When jump button is released
         {
             jumpReleased = true;
+            coyoteTimeCounter = 0;
         }
     }
 
