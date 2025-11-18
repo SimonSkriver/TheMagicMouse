@@ -16,18 +16,27 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float normalGravity;
     [SerializeField] float jumpingGravity;
     [SerializeField] float fallingGravity;
+    [SerializeField] float wallSlideSpeed = 2f;
     private Vector2 moveInput;
     private bool jumpPressed;
     private bool jumpReleased;
-    private int jumpsRemaining = 2;
+    private int jumpsRemaining;
+    private bool isWallSliding;
 
     [Header ("Ground check settings")]
     public Transform groundCheck;
     public LayerMask groundLayer;
     public float groundCheckRadius;
     private bool isGrounded;
+
+    [Header ("Wall check settings")]
+    public Transform wallCheck;
+    public LayerMask wallLayer;
+    public float wallCheckRadius;
+    private bool isWalled;
     
     private float targetGravity;
+    private bool isFacingRight = true;
     
 
     void Start()
@@ -39,13 +48,16 @@ public class PlayerController : MonoBehaviour
     {
         ApplyVariableGravity();
         CheckGrounded();
+        Flip();
+        CheckWalled();
     }
 
     void FixedUpdate()
     {
+        rb.gravityScale = targetGravity;
         HandleMovement();
         HandleJumping();
-        rb.gravityScale = targetGravity;
+        HandleWallSlide();
     }
 
     void HandleMovement()
@@ -55,14 +67,13 @@ public class PlayerController : MonoBehaviour
 
     void HandleJumping()
     {
-        if (jumpPressed && jumpsRemaining > 0)
+        if (jumpPressed)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
             jumpPressed = false;
             jumpReleased = false;
             jumpsRemaining --; 
         }
-        
         if (jumpReleased)
         {
             if (rb.linearVelocityY > 0f)
@@ -73,9 +84,21 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void HandleWallSlide()
+    {
+        if (isWalled && !isGrounded && moveInput.x != 0)
+        {
+            isWallSliding = true;
+            rb.linearVelocity = new Vector2(rb.linearVelocityX, Mathf.Max(rb.linearVelocityY, -wallSlideSpeed));
+        }
+        else
+        {
+            isWallSliding = false;
+        }
+    } 
+
     void OnMove(InputValue value)
     {
-        Debug.Log("Move called");
         moveInput = value.Get<Vector2>();
     }
 
@@ -83,9 +106,10 @@ public class PlayerController : MonoBehaviour
     {
         if (value.isPressed)
         {
-            Debug.Log("Jump called");
-            jumpPressed = true;
-            jumpReleased = false; 
+            if (isGrounded || jumpsRemaining > 0)
+            {
+                jumpPressed = true;
+            }
         }
         else // When jump button is released
         {
@@ -100,6 +124,11 @@ public class PlayerController : MonoBehaviour
         {
             jumpsRemaining = maxJumps;
         }
+    }
+
+    void CheckWalled()
+    {
+        isWalled = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, wallLayer);
     }
 
     void ApplyVariableGravity()
@@ -118,9 +147,21 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void Flip()
+    {
+        if (isFacingRight && moveInput.x < 0 || !isFacingRight && moveInput.x > 0) // If we're facing right but moving left or if we're facing left but moving right.
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 ls = transform.localScale;
+            ls.x *= -1f;
+            transform.localScale = ls;
+        }
+    }
+
     private void OnDrawGizmosSelected() // This is for debugging purposes. Draws a ring around the groundcheck GameObject
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        Gizmos.DrawWireSphere(wallCheck.position, wallCheckRadius);
     }
 }
