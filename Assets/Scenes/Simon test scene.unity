@@ -377,6 +377,7 @@ MonoBehaviour:
   wallSlideSpeed: 2
   wallJumpPower: {x: 18, y: 18}
   wallJumpLockDuration: 0.2
+  coyoteTime: 0.1
   groundCheck: {fileID: 1319961276}
   groundLayer:
     serializedVersion: 2
