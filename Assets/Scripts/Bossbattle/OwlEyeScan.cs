@@ -13,6 +13,7 @@ public class OwlEyeScan : MonoBehaviour
     [SerializeField] protected float slamCooldownDuration = 2.5f;
     [SerializeField] protected float slamCooldownTimer;
     private bool onCooldown = true;
+    public bool IsScanning = true;
 
 
     private Light2D lightCone;
@@ -37,7 +38,9 @@ public class OwlEyeScan : MonoBehaviour
                 slamCooldownTimer = 0f;
             }
         }
-        DetectTarget();
+
+            DetectTarget();
+       
     }
 
     void DetectTarget()

@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 2901404196994073853}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: -1.86, y: 1.94, z: 0}
-  m_LocalScale: {x: 0.4048583, y: 0.4048583, z: 0.4048583}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -102,3 +102,4 @@ MonoBehaviour:
   clawPrefab: {fileID: 5891335096720034532, guid: 45da1636816897e4b8a25d0d2787e611, type: 3}
   slamCooldownDuration: 2.5
   slamCooldownTimer: 0
+  IsScanning: 1
