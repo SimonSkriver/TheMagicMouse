@@ -3,33 +3,36 @@ using UnityEngine;
 public class BossbattleEventManager : MonoBehaviour
 {
     protected float eventTimer;
-    [SerializeField] protected float eventDuration = 5f;
+    [SerializeField] protected float scanningDuration = 10f;
+    [SerializeField] protected float collectionDuration = 5f;
+    
     private bool sceneRunning;
     private bool bossPresent;
-    public float playerMana = 0f;
+    public float playerCurrentMana = 0f;
+    public float playerFullMana = 100f;
+    
     [SerializeField] protected GameObject bossPrefab;
     [SerializeField] protected GameObject bossInstance;
 
     void Update()
     {
+        //Event timer counting up
         if (sceneRunning)
         {
             eventTimer += Time.deltaTime;
         }
-
-        if (eventTimer >= eventDuration && bossPresent)
+        //Scanning stage ends, when timer reaches set duration
+        if (eventTimer >= scanningDuration && bossPresent)
         {
             BossExit();
-            bossPresent = false;
         }
-
-        if (eventTimer >= eventDuration && !bossPresent)
+        //Collection stage ends, when timer reaches set duration
+        if (eventTimer >= collectionDuration && !bossPresent)
         {
             BossReturn();
-            bossPresent = true;
         }
-
-        if (playerMana >= 100f && !bossPresent && sceneRunning)
+        //Boss fleeing after 100 mana
+        if (playerCurrentMana >= playerFullMana && !bossPresent && sceneRunning)
         {
             BossFleeing();
         }
@@ -48,7 +51,7 @@ public class BossbattleEventManager : MonoBehaviour
     {
         bossPresent = false;
         eventTimer = 0f;
-        bossInstance.GetComponent<Animator>().SetBool("IsExiting?", true);
+        bossInstance.GetComponent<Animator>().SetTrigger("Exit");
         bossInstance.GetComponent<Animator>().SetBool("IsScanning?", false);
         Debug.Log("BossExit");
     }
@@ -57,9 +60,9 @@ public class BossbattleEventManager : MonoBehaviour
     {
         bossPresent = true;
         eventTimer = 0f;
-        bossInstance.GetComponent<Animator>().SetBool("IsReturning?", true);
+        bossInstance.GetComponent<Animator>().SetTrigger("Return");
         bossInstance.GetComponent<Animator>().SetBool("IsScanning?", true);
-        bossInstance.GetComponent<Animator>().SetBool("IsExiting?", false);
+        
         Debug.Log("BossReturn");
     }
 
@@ -67,11 +70,9 @@ public class BossbattleEventManager : MonoBehaviour
     {
         bossPresent = false;
         sceneRunning = false;
-        bossInstance.GetComponent<Animator>().SetBool("IsFleeing?", true);
-        bossInstance.GetComponent<Animator>().SetBool("IsExiting?", false);
+        bossInstance.GetComponent<Animator>().SetTrigger("Flee");
         bossInstance.GetComponent<Animator>().SetBool("IsScanning?", false);
-        bossInstance.GetComponent<Animator>().SetBool("IsReturning?", false);
-        
-        Debug.Log("BossFleeing");        
+        Destroy(bossInstance, 2f);
+        Debug.Log("BossFleeing");
     }
 }
