@@ -141,7 +141,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -185,10 +185,10 @@ TextureImporter:
       name: owl_scanidle_0
       rect:
         serializedVersion: 2
-        x: 874
-        y: 172
-        width: 668
-        height: 1270
+        x: 0
+        y: 0
+        width: 3840
+        height: 2160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,10 +207,10 @@ TextureImporter:
       name: owl_scanidle_1
       rect:
         serializedVersion: 2
-        x: 949
-        y: 158
-        width: 1942
-        height: 1709
+        x: 3840
+        y: 0
+        width: 3840
+        height: 2160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,10 +229,10 @@ TextureImporter:
       name: owl_scanidle_2
       rect:
         serializedVersion: 2
-        x: 2298
-        y: 172
-        width: 668
-        height: 1270
+        x: 7680
+        y: 0
+        width: 3840
+        height: 2160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,10 +251,10 @@ TextureImporter:
       name: owl_scanidle_3
       rect:
         serializedVersion: 2
-        x: 4714
-        y: 165
-        width: 668
-        height: 1270
+        x: 11520
+        y: 0
+        width: 3840
+        height: 2160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,10 +273,10 @@ TextureImporter:
       name: owl_scanidle_4
       rect:
         serializedVersion: 2
-        x: 4789
-        y: 151
-        width: 1942
-        height: 1713
+        x: 15360
+        y: 0
+        width: 3840
+        height: 2160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,429 +291,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_5
-      rect:
-        serializedVersion: 2
-        x: 6138
-        y: 165
-        width: 668
-        height: 1270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 69e5318a39da72180800000000000000
-      internalID: -9140146069033492842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_6
-      rect:
-        serializedVersion: 2
-        x: 8554
-        y: 117
-        width: 668
-        height: 1270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e2292a83d94f05a10800000000000000
-      internalID: 1896284399220199982
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_7
-      rect:
-        serializedVersion: 2
-        x: 8629
-        y: 1156
-        width: 1942
-        height: 695
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f8c6d641c330a760800000000000000
-      internalID: 7467025087390468339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_8
-      rect:
-        serializedVersion: 2
-        x: 8803
-        y: 929
-        width: 432
-        height: 486
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b6710541d4ba87210800000000000000
-      internalID: 1331002037429606251
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_9
-      rect:
-        serializedVersion: 2
-        x: 9964
-        y: 929
-        width: 433
-        height: 486
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 46af69ea022831290800000000000000
-      internalID: -7920844242734876060
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_10
-      rect:
-        serializedVersion: 2
-        x: 9978
-        y: 117
-        width: 668
-        height: 1270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d00aa06575d606230800000000000000
-      internalID: 3630021521533739021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_11
-      rect:
-        serializedVersion: 2
-        x: 12394
-        y: 142
-        width: 668
-        height: 1270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b5187dc63aa0c2f0800000000000000
-      internalID: -954575968650390094
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_12
-      rect:
-        serializedVersion: 2
-        x: 12469
-        y: 1196
-        width: 1942
-        height: 695
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cbbdbcb3e190731d0800000000000000
-      internalID: -3371215770606642244
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_13
-      rect:
-        serializedVersion: 2
-        x: 12643
-        y: 954
-        width: 432
-        height: 486
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 85216fc337f7d9960800000000000000
-      internalID: 7610379078246732376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_14
-      rect:
-        serializedVersion: 2
-        x: 13804
-        y: 954
-        width: 433
-        height: 486
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0f03bb8a7e4bb38d0800000000000000
-      internalID: -2865497830829903632
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_15
-      rect:
-        serializedVersion: 2
-        x: 13818
-        y: 142
-        width: 668
-        height: 1270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2a4fd7068fc701150800000000000000
-      internalID: 5841306122912134306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_16
-      rect:
-        serializedVersion: 2
-        x: 16234
-        y: 162
-        width: 668
-        height: 1270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8efb9c73a988453f0800000000000000
-      internalID: -912954628507058200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_17
-      rect:
-        serializedVersion: 2
-        x: 16309
-        y: 1212
-        width: 1942
-        height: 695
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0cd8add8dd73e9ac0800000000000000
-      internalID: -3846575607020614208
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_18
-      rect:
-        serializedVersion: 2
-        x: 16483
-        y: 974
-        width: 432
-        height: 486
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 362030d9c2d2c2750800000000000000
-      internalID: 6281445249911030371
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_19
-      rect:
-        serializedVersion: 2
-        x: 17644
-        y: 974
-        width: 433
-        height: 486
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 01986f51f3f711240800000000000000
-      internalID: 4760726190035470608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_20
-      rect:
-        serializedVersion: 2
-        x: 17658
-        y: 162
-        width: 668
-        height: 1270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 44427d8243de36f60800000000000000
-      internalID: 8026519769183626308
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_21
-      rect:
-        serializedVersion: 2
-        x: 9087
-        y: 103
-        width: 1024
-        height: 1034
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c62e45fed62b7c710800000000000000
-      internalID: 1713534368474260076
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_22
-      rect:
-        serializedVersion: 2
-        x: 12927
-        y: 128
-        width: 1024
-        height: 1034
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c02c1ff0ec59400c0800000000000000
-      internalID: -4610395406257241588
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_scanidle_23
-      rect:
-        serializedVersion: 2
-        x: 16767
-        y: 148
-        width: 1024
-        height: 1034
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2d9820c4e1b7b8870800000000000000
-      internalID: 8686171676368603602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 189612849405e9c478e10bccb238d821
     internalID: 0
     vertices: []
     indices: 

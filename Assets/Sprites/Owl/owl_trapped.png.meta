@@ -159,7 +159,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -203,10 +203,10 @@ TextureImporter:
       name: owl_trapped_0
       rect:
         serializedVersion: 2
-        x: 1547
-        y: 615
-        width: 1051
-        height: 1466
+        x: 1542
+        y: 288
+        width: 1053
+        height: 1807
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,10 +225,10 @@ TextureImporter:
       name: owl_trapped_1
       rect:
         serializedVersion: 2
-        x: 1691
-        y: 1756
-        width: 1115
-        height: 372
+        x: 1983
+        y: 1976
+        width: 738
+        height: 157
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +247,10 @@ TextureImporter:
       name: owl_trapped_2
       rect:
         serializedVersion: 2
-        x: 2482
-        y: 2034
-        width: 633
-        height: 73
+        x: 2399
+        y: 1719
+        width: 951
+        height: 387
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,10 +269,10 @@ TextureImporter:
       name: owl_trapped_3
       rect:
         serializedVersion: 2
-        x: 2608
-        y: 0
-        width: 1233
-        height: 2072
+        x: 5378
+        y: 965
+        width: 1763
+        height: 1143
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,10 +291,10 @@ TextureImporter:
       name: owl_trapped_4
       rect:
         serializedVersion: 2
-        x: 2861
-        y: 2053
-        width: 284
-        height: 51
+        x: 9219
+        y: 0
+        width: 2302
+        height: 2129
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,10 +313,10 @@ TextureImporter:
       name: owl_trapped_5
       rect:
         serializedVersion: 2
-        x: 5379
-        y: 0
-        width: 2302
-        height: 2129
+        x: 13067
+        y: 615
+        width: 1051
+        height: 1466
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -335,10 +335,10 @@ TextureImporter:
       name: owl_trapped_6
       rect:
         serializedVersion: 2
-        x: 9222
-        y: 288
-        width: 1053
-        height: 1807
+        x: 13211
+        y: 1756
+        width: 1115
+        height: 372
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,10 +357,10 @@ TextureImporter:
       name: owl_trapped_7
       rect:
         serializedVersion: 2
-        x: 9663
-        y: 1976
-        width: 738
-        height: 157
+        x: 14002
+        y: 2034
+        width: 633
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -379,10 +379,10 @@ TextureImporter:
       name: owl_trapped_8
       rect:
         serializedVersion: 2
-        x: 10079
-        y: 1719
-        width: 951
-        height: 387
+        x: 14128
+        y: 0
+        width: 1233
+        height: 2072
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -401,10 +401,10 @@ TextureImporter:
       name: owl_trapped_9
       rect:
         serializedVersion: 2
-        x: 13064
-        y: 0
-        width: 2297
-        height: 2137
+        x: 14381
+        y: 2053
+        width: 284
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -445,10 +445,10 @@ TextureImporter:
       name: owl_trapped_11
       rect:
         serializedVersion: 2
-        x: 20738
-        y: 965
-        width: 1763
-        height: 1143
+        x: 20744
+        y: 0
+        width: 2296
+        height: 2137
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -469,8 +469,8 @@ TextureImporter:
         serializedVersion: 2
         x: 1886
         y: 0
-        width: 851
-        height: 1064
+        width: 751
+        height: 1046
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -489,10 +489,10 @@ TextureImporter:
       name: owl_trapped_13
       rect:
         serializedVersion: 2
-        x: 9566
-        y: 0
-        width: 751
-        height: 1046
+        x: 2603
+        y: 977
+        width: 147
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -511,10 +511,10 @@ TextureImporter:
       name: owl_trapped_14
       rect:
         serializedVersion: 2
-        x: 10283
-        y: 977
-        width: 147
-        height: 90
+        x: 2608
+        y: 0
+        width: 1233
+        height: 1934
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,10 +533,10 @@ TextureImporter:
       name: owl_trapped_15
       rect:
         serializedVersion: 2
-        x: 10288
-        y: 0
-        width: 1233
-        height: 1934
+        x: 5435
+        y: 613
+        width: 175
+        height: 468
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -555,10 +555,10 @@ TextureImporter:
       name: owl_trapped_16
       rect:
         serializedVersion: 2
-        x: 20795
-        y: 613
-        width: 175
-        height: 468
+        x: 5513
+        y: 943
+        width: 663
+        height: 859
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -577,10 +577,10 @@ TextureImporter:
       name: owl_trapped_17
       rect:
         serializedVersion: 2
-        x: 20873
-        y: 943
-        width: 663
-        height: 859
+        x: 5726
+        y: 0
+        width: 862
+        height: 1069
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -599,10 +599,10 @@ TextureImporter:
       name: owl_trapped_18
       rect:
         serializedVersion: 2
-        x: 21086
-        y: 0
-        width: 862
-        height: 1069
+        x: 5985
+        y: 680
+        width: 442
+        height: 724
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -621,10 +621,10 @@ TextureImporter:
       name: owl_trapped_19
       rect:
         serializedVersion: 2
-        x: 21345
-        y: 680
-        width: 442
-        height: 724
+        x: 6448
+        y: 361
+        width: 1233
+        height: 1573
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -643,10 +643,10 @@ TextureImporter:
       name: owl_trapped_20
       rect:
         serializedVersion: 2
-        x: 21808
-        y: 361
-        width: 1232
-        height: 1573
+        x: 7185
+        y: 0
+        width: 437
+        height: 1369
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -665,10 +665,10 @@ TextureImporter:
       name: owl_trapped_21
       rect:
         serializedVersion: 2
-        x: 22545
+        x: 13406
         y: 0
-        width: 437
-        height: 1369
+        width: 851
+        height: 1064
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -687,10 +687,10 @@ TextureImporter:
       name: owl_trapped_22
       rect:
         serializedVersion: 2
-        x: 1745
-        y: 313
-        width: 324
-        height: 581
+        x: 5635
+        y: 255
+        width: 304
+        height: 456
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -709,10 +709,10 @@ TextureImporter:
       name: owl_trapped_23
       rect:
         serializedVersion: 2
-        x: 20995
-        y: 255
-        width: 304
-        height: 456
+        x: 7515
+        y: 76
+        width: 166
+        height: 486
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -731,10 +731,10 @@ TextureImporter:
       name: owl_trapped_24
       rect:
         serializedVersion: 2
-        x: 22875
-        y: 76
-        width: 165
-        height: 486
+        x: 13265
+        y: 313
+        width: 324
+        height: 581
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -775,7 +775,7 @@ TextureImporter:
       name: owl_trapped_26
       rect:
         serializedVersion: 2
-        x: 11158
+        x: 7318
         y: 0
         width: 136
         height: 201
@@ -797,10 +797,10 @@ TextureImporter:
       name: owl_trapped_27
       rect:
         serializedVersion: 2
-        x: 18828
+        x: 14998
         y: 0
-        width: 129
-        height: 191
+        width: 136
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -819,10 +819,10 @@ TextureImporter:
       name: owl_trapped_28
       rect:
         serializedVersion: 2
-        x: 18838
+        x: 18828
         y: 0
-        width: 136
-        height: 201
+        width: 129
+        height: 191
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -841,7 +841,7 @@ TextureImporter:
       name: owl_trapped_29
       rect:
         serializedVersion: 2
-        x: 22678
+        x: 18838
         y: 0
         width: 136
         height: 201
