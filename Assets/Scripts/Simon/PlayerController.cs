@@ -145,7 +145,9 @@ public class PlayerController : MonoBehaviour
             {
                 jumpPressed = true;
                 if (!isGrounded && coyoteTimeCounter <= 0)
-                jumpsRemaining--;
+                {
+                    jumpsRemaining--;
+                }
             }
         }
         else // When jump button is released
