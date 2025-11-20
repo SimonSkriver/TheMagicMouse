@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0c3ee9686ef0b304e92bd45f194057d6
+guid: 8e45f2c2aebe26b408f0947659dc61d5
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -87,7 +87,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 75
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -139,12 +139,12 @@ TextureImporter:
       name: doublejump_0
       rect:
         serializedVersion: 2
-        x: 350
+        x: 0
         y: 0
-        width: 1639
-        height: 2027
+        width: 1282
+        height: 1548
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: doublejump_1
       rect:
         serializedVersion: 2
-        x: 2444
-        y: 86
-        width: 1653
-        height: 1948
+        x: 1282
+        y: 0
+        width: 1282
+        height: 1548
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -183,12 +183,12 @@ TextureImporter:
       name: doublejump_2
       rect:
         serializedVersion: 2
-        x: 4340
-        y: 164
-        width: 1376
-        height: 1651
+        x: 2564
+        y: 0
+        width: 1282
+        height: 1548
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -205,12 +205,12 @@ TextureImporter:
       name: doublejump_3
       rect:
         serializedVersion: 2
-        x: 4958
-        y: 1808
-        width: 242
-        height: 157
+        x: 3846
+        y: 0
+        width: 1282
+        height: 1548
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -227,12 +227,12 @@ TextureImporter:
       name: doublejump_4
       rect:
         serializedVersion: 2
-        x: 6329
-        y: 185
-        width: 1378
-        height: 1691
+        x: 5128
+        y: 0
+        width: 1282
+        height: 1548
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -249,12 +249,12 @@ TextureImporter:
       name: doublejump_5
       rect:
         serializedVersion: 2
-        x: 8191
-        y: 207
-        width: 1512
-        height: 1762
+        x: 6410
+        y: 0
+        width: 1282
+        height: 1548
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -271,12 +271,12 @@ TextureImporter:
       name: doublejump_6
       rect:
         serializedVersion: 2
-        x: 10515
-        y: 115
-        width: 1447
-        height: 1933
+        x: 7692
+        y: 0
+        width: 1282
+        height: 1548
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -293,12 +293,12 @@ TextureImporter:
       name: doublejump_7
       rect:
         serializedVersion: 2
-        x: 12778
-        y: 96
-        width: 1499
-        height: 1931
+        x: 8974
+        y: 0
+        width: 1282
+        height: 1548
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -311,121 +311,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: doublejump_8
-      rect:
-        serializedVersion: 2
-        x: 14611
-        y: 79
-        width: 1447
-        height: 1969
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8f69cc76bb7cbc010800000000000000
-      internalID: 1210280532593383160
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: doublejump_9
-      rect:
-        serializedVersion: 2
-        x: 4180
-        y: 578
-        width: 245
-        height: 329
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6ca5383125ca5a2b0800000000000000
-      internalID: -5573859495286449466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: doublejump_10
-      rect:
-        serializedVersion: 2
-        x: 9665
-        y: 694
-        width: 21
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 659c18d3fee5f1750800000000000000
-      internalID: 6277840787199871318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: doublejump_11
-      rect:
-        serializedVersion: 2
-        x: 4254
-        y: 272
-        width: 481
-        height: 173
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e6a0ace2f52103d60800000000000000
-      internalID: 7867808749032442478
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: doublejump_12
-      rect:
-        serializedVersion: 2
-        x: 6844
-        y: 125
-        width: 117
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 16e3cc5ee00ca2650800000000000000
-      internalID: 6208986206501092961
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7df863a39f25c48448184b6574642ac5
     internalID: 0
     vertices: []
     indices: 
@@ -433,21 +323,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":1282.0,"y":1548.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       doublejump_0: 9119744025594411223
       doublejump_1: -1574220164692930521
-      doublejump_10: 6277840787199871318
-      doublejump_11: 7867808749032442478
-      doublejump_12: 6208986206501092961
       doublejump_2: -4297052894116066154
       doublejump_3: -7528060895297069430
       doublejump_4: 1205268229466608199
       doublejump_5: 3171666182491342532
       doublejump_6: -3522746909671921096
       doublejump_7: 7631059676095188066
-      doublejump_8: 1210280532593383160
-      doublejump_9: -5573859495286449466
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

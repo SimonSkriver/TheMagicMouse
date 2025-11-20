@@ -1,61 +1,43 @@
 fileFormatVersion: 2
-guid: 1f71caa17c0652f40aca3373574d4277
+guid: 7659f78a58aac4c4a819624552ea3429
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4281637774074219296
-    second: jump_0
+      213: 7491234828143102344
+    second: "L\xD8B_0"
   - first:
-      213: -7862396843884538191
-    second: jump_1
+      213: 7965602886551666103
+    second: "L\xD8B_1"
   - first:
-      213: 8276514422256456541
-    second: jump_2
+      213: 8312769771719386037
+    second: "L\xD8B_2"
   - first:
-      213: -3697937850672776721
-    second: jump_3
+      213: -1331563470101883989
+    second: "L\xD8B_3"
   - first:
-      213: 4987614716155920338
-    second: jump_4
+      213: -2742017182484665816
+    second: "L\xD8B_4"
   - first:
-      213: -1184746109927277663
-    second: jump_5
+      213: -7192286883721165109
+    second: "L\xD8B_5"
   - first:
-      213: -4845626741048118468
-    second: jump_6
+      213: 6119293481537850026
+    second: "L\xD8B_6"
   - first:
-      213: 7014594740173477433
-    second: jump_7
+      213: -2411949921074646963
+    second: "L\xD8B_7"
   - first:
-      213: 1578323387413840467
-    second: jump_8
+      213: -4476578079229311341
+    second: "L\xD8B_8"
   - first:
-      213: 7655840988501763603
-    second: jump_9
+      213: 672029549252226574
+    second: "L\xD8B_9"
   - first:
-      213: -9197958414588387290
-    second: jump_10
+      213: 2578941880611056096
+    second: "L\xD8B_10"
   - first:
-      213: -5086767228222736262
-    second: jump_11
-  - first:
-      213: 6181903233876262169
-    second: jump_12
-  - first:
-      213: 6085027727657474495
-    second: jump_13
-  - first:
-      213: -7558048255918937315
-    second: jump_14
-  - first:
-      213: 1978480726327293745
-    second: jump_15
-  - first:
-      213: -6132592246010354800
-    second: jump_16
-  - first:
-      213: -418148235218303146
-    second: jump_17
+      213: -6635119941614287021
+    second: "L\xD8B_11"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -151,7 +133,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jump_0
+      name: "L\xD8B_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -166,14 +148,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02b8694dede6b6b30800000000000000
-      internalID: 4281637774074219296
+      spriteID: 889018cc26636f760800000000000000
+      internalID: 7491234828143102344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_1
+      name: "L\xD8B_1"
       rect:
         serializedVersion: 2
         x: 2048
@@ -188,14 +170,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b61c1d2ab723e290800000000000000
-      internalID: -7862396843884538191
+      spriteID: 7bdfcba2f918b8e60800000000000000
+      internalID: 7965602886551666103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_2
+      name: "L\xD8B_2"
       rect:
         serializedVersion: 2
         x: 4096
@@ -210,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d535ef424061cd270800000000000000
-      internalID: 8276514422256456541
+      spriteID: 5b360fe7014ec5370800000000000000
+      internalID: 8312769771719386037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_3
+      name: "L\xD8B_3"
       rect:
         serializedVersion: 2
         x: 6144
@@ -232,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe97d290e194eacc0800000000000000
-      internalID: -3697937850672776721
+      spriteID: ba3d0b03416558de0800000000000000
+      internalID: -1331563470101883989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_4
+      name: "L\xD8B_4"
       rect:
         serializedVersion: 2
         x: 8192
@@ -254,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2dffbf8a821973540800000000000000
-      internalID: 4987614716155920338
+      spriteID: 82aebfd76e562f9d0800000000000000
+      internalID: -2742017182484665816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_5
+      name: "L\xD8B_5"
       rect:
         serializedVersion: 2
         x: 10240
@@ -276,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ab32c8a0bfee8fe0800000000000000
-      internalID: -1184746109927277663
+      spriteID: bc649158f2ddf2c90800000000000000
+      internalID: -7192286883721165109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_6
+      name: "L\xD8B_6"
       rect:
         serializedVersion: 2
         x: 12288
@@ -298,14 +280,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c3371b9f620e0ccb0800000000000000
-      internalID: -4845626741048118468
+      spriteID: aaa4d6300091ce450800000000000000
+      internalID: 6119293481537850026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_7
+      name: "L\xD8B_7"
       rect:
         serializedVersion: 2
         x: 14336
@@ -320,14 +302,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9361d5350c8d85160800000000000000
-      internalID: 7014594740173477433
+      spriteID: d40705a6358078ed0800000000000000
+      internalID: -2411949921074646963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_8
+      name: "L\xD8B_8"
       rect:
         serializedVersion: 2
         x: 16384
@@ -342,14 +324,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3524e7f22c457e510800000000000000
-      internalID: 1578323387413840467
+      spriteID: 3968c3274ffffd1c0800000000000000
+      internalID: -4476578079229311341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_9
+      name: "L\xD8B_9"
       rect:
         serializedVersion: 2
         x: 18432
@@ -364,14 +346,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 316e58011d20f3a60800000000000000
-      internalID: 7655840988501763603
+      spriteID: e0eaeb18057835900800000000000000
+      internalID: 672029549252226574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_10
+      name: "L\xD8B_10"
       rect:
         serializedVersion: 2
         x: 20480
@@ -386,14 +368,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 620e4a70e894a5080800000000000000
-      internalID: -9197958414588387290
+      spriteID: 0e923320afd3ac320800000000000000
+      internalID: 2578941880611056096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_11
+      name: "L\xD8B_11"
       rect:
         serializedVersion: 2
         x: 22528
@@ -408,140 +390,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a787fa2282c2869b0800000000000000
-      internalID: -5086767228222736262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_12
-      rect:
-        serializedVersion: 2
-        x: 24576
-        y: 0
-        width: 2048
-        height: 2048
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 91d7803fc388ac550800000000000000
-      internalID: 6181903233876262169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_13
-      rect:
-        serializedVersion: 2
-        x: 17541
-        y: 191
-        width: 21
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fb91d6b7a7c527450800000000000000
-      internalID: 6085027727657474495
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_14
-      rect:
-        serializedVersion: 2
-        x: 23685
-        y: 191
-        width: 21
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d1be0bec72b6c1790800000000000000
-      internalID: -7558048255918937315
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_15
-      rect:
-        serializedVersion: 2
-        x: 12763
-        y: 100
-        width: 21
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 137f1b7fcb9f47b10800000000000000
-      internalID: 1978480726327293745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_16
-      rect:
-        serializedVersion: 2
-        x: 14811
-        y: 100
-        width: 21
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 093ec3818d7a4eaa0800000000000000
-      internalID: -6132592246010354800
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jump_17
-      rect:
-        serializedVersion: 2
-        x: 11106
-        y: 92
-        width: 17
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6574b504560723af0800000000000000
-      internalID: -418148235218303146
+      spriteID: 35748f541915be3a0800000000000000
+      internalID: -6635119941614287021
       vertices: []
       indices: 
       edges: []
@@ -550,7 +400,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 29f303f22d21f9246a2318569fbb381d
+    spriteID: 69b6674a797f4b54194da259c1ede920
     internalID: 0
     vertices: []
     indices: 
@@ -560,24 +410,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jump_0: 4281637774074219296
-      jump_1: -7862396843884538191
-      jump_10: -9197958414588387290
-      jump_11: -5086767228222736262
-      jump_12: 6181903233876262169
-      jump_13: 6085027727657474495
-      jump_14: -7558048255918937315
-      jump_15: 1978480726327293745
-      jump_16: -6132592246010354800
-      jump_17: -418148235218303146
-      jump_2: 8276514422256456541
-      jump_3: -3697937850672776721
-      jump_4: 4987614716155920338
-      jump_5: -1184746109927277663
-      jump_6: -4845626741048118468
-      jump_7: 7014594740173477433
-      jump_8: 1578323387413840467
-      jump_9: 7655840988501763603
+      "L\xD8B_0": 7491234828143102344
+      "L\xD8B_1": 7965602886551666103
+      "L\xD8B_10": 2578941880611056096
+      "L\xD8B_11": -6635119941614287021
+      "L\xD8B_2": 8312769771719386037
+      "L\xD8B_3": -1331563470101883989
+      "L\xD8B_4": -2742017182484665816
+      "L\xD8B_5": -7192286883721165109
+      "L\xD8B_6": 6119293481537850026
+      "L\xD8B_7": -2411949921074646963
+      "L\xD8B_8": -4476578079229311341
+      "L\xD8B_9": 672029549252226574
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
