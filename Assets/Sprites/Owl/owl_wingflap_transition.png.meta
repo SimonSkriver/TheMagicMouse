@@ -1,0 +1,354 @@
+fileFormatVersion: 2
+guid: 8c5f7468562160545966ac2e0bcc0941
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8639340693452539459
+    second: owl_wingflap_transition_0
+  - first:
+      213: 4946453704693817712
+    second: owl_wingflap_transition_1
+  - first:
+      213: 417003491309033190
+    second: owl_wingflap_transition_2
+  - first:
+      213: -1067608235152770527
+    second: owl_wingflap_transition_3
+  - first:
+      213: 6559700393940401939
+    second: owl_wingflap_transition_4
+  - first:
+      213: -2432582187142351621
+    second: owl_wingflap_transition_5
+  - first:
+      213: 8225406114303354044
+    second: owl_wingflap_transition_6
+  - first:
+      213: 4328693117765885492
+    second: owl_wingflap_transition_7
+  - first:
+      213: 2862973592048192870
+    second: owl_wingflap_transition_8
+  - first:
+      213: 281759534372886088
+    second: owl_wingflap_transition_9
+  - first:
+      213: 1279818652705890031
+    second: owl_wingflap_transition_10
+  - first:
+      213: -5608813849861667532
+    second: owl_wingflap_transition_11
+  - first:
+      213: 6058587039573157334
+    second: owl_wingflap_transition_12
+  - first:
+      213: -1583785752172724020
+    second: owl_wingflap_transition_13
+  - first:
+      213: -3562487666462691580
+    second: owl_wingflap_transition_14
+  - first:
+      213: 972295555561234579
+    second: owl_wingflap_transition_15
+  - first:
+      213: -6082559664195239677
+    second: owl_wingflap_transition_16
+  - first:
+      213: 5940504772179168337
+    second: owl_wingflap_transition_17
+  - first:
+      213: 4077756934621103419
+    second: owl_wingflap_transition_18
+  - first:
+      213: -5210056953486427950
+    second: owl_wingflap_transition_19
+  - first:
+      213: -4779101700454531869
+    second: owl_wingflap_transition_20
+  - first:
+      213: 5870277712606621658
+    second: owl_wingflap_transition_21
+  - first:
+      213: -6561043371836220267
+    second: owl_wingflap_transition_22
+  - first:
+      213: 2976074616616862148
+    second: owl_wingflap_transition_23
+  - first:
+      213: -5607288512783772462
+    second: owl_wingflap_transition_24
+  - first:
+      213: -1197064911810551321
+    second: owl_wingflap_transition_25
+  - first:
+      213: -6083523159212675903
+    second: owl_wingflap_transition_26
+  - first:
+      213: 5089342118498768387
+    second: owl_wingflap_transition_27
+  - first:
+      213: 4945245798917731189
+    second: owl_wingflap_transition_28
+  - first:
+      213: 5193558082114633169
+    second: owl_wingflap_transition_29
+  - first:
+      213: -3214551354313683244
+    second: owl_wingflap_transition_30
+  - first:
+      213: -149785072697876478
+    second: owl_wingflap_transition_31
+  - first:
+      213: 8994861442262228412
+    second: owl_wingflap_transition_32
+  - first:
+      213: 3793643729200267467
+    second: owl_wingflap_transition_33
+  - first:
+      213: 6649626240609728390
+    second: owl_wingflap_transition_34
+  - first:
+      213: 821417244285809873
+    second: owl_wingflap_transition_35
+  - first:
+      213: 7354311745614431430
+    second: owl_wingflap_transition_36
+  - first:
+      213: -3912282566971785587
+    second: owl_wingflap_transition_37
+  - first:
+      213: 8860465649148351292
+    second: owl_wingflap_transition_38
+  - first:
+      213: -8800913729333391422
+    second: owl_wingflap_transition_39
+  - first:
+      213: -2073782984182658666
+    second: owl_wingflap_transition_40
+  - first:
+      213: 7838292550491195180
+    second: owl_wingflap_transition_41
+  - first:
+      213: 2406917826967362568
+    second: owl_wingflap_transition_42
+  - first:
+      213: 1265376145496754708
+    second: owl_wingflap_transition_43
+  - first:
+      213: -4471319709007773454
+    second: owl_wingflap_transition_44
+  - first:
+      213: -6538038883448307778
+    second: owl_wingflap_transition_45
+  - first:
+      213: -2798139641345956275
+    second: owl_wingflap_transition_46
+  - first:
+      213: 1113209566422946263
+    second: owl_wingflap_transition_47
+  - first:
+      213: -6847079101998804067
+    second: owl_wingflap_transition_48
+  - first:
+      213: -540289231921816141
+    second: owl_wingflap_transition_49
+  - first:
+      213: 7264749958159189905
+    second: owl_wingflap_transition_50
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: owl_wingflap_transition_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 9
+      pivot: {x: 0.50000006, y: 0.59405637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db93f299965ea1880800000000000000
+      internalID: -8639340693452539459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: owl_wingflap_transition_1
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 9
+      pivot: {x: 0.5005535, y: 0.4645803}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071a03edf6555a440800000000000000
+      internalID: 4946453704693817712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: owl_wingflap_transition_2
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 9
+      pivot: {x: 0.4985517, y: 0.5489227}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e69299477e79c500800000000000000
+      internalID: 417003491309033190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7a3bd6932a65f744b98367b2fcd8a067
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":3840.0,"y":2160.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      owl_wingflap_transition_0: -8639340693452539459
+      owl_wingflap_transition_1: 4946453704693817712
+      owl_wingflap_transition_2: 417003491309033190
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

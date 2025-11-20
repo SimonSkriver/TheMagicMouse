@@ -1,0 +1,432 @@
+fileFormatVersion: 2
+guid: c0524c8b87895564583fe62c0d6f27b3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1963992812212732226
+    second: owl_headrotate_0
+  - first:
+      213: -9001635256926843302
+    second: owl_headrotate_1
+  - first:
+      213: -5843718680552285674
+    second: owl_headrotate_2
+  - first:
+      213: -6375946065027824191
+    second: owl_headrotate_3
+  - first:
+      213: -7699144460869097200
+    second: owl_headrotate_4
+  - first:
+      213: -3429367642475621018
+    second: owl_headrotate_5
+  - first:
+      213: -7136185504152627089
+    second: owl_headrotate_6
+  - first:
+      213: -4041738882069503306
+    second: owl_headrotate_7
+  - first:
+      213: 2834475496193251801
+    second: owl_headrotate_8
+  - first:
+      213: -1589586518942017879
+    second: owl_headrotate_9
+  - first:
+      213: 1831666109264104578
+    second: owl_headrotate_10
+  - first:
+      213: -1140083240056566851
+    second: owl_headrotate_11
+  - first:
+      213: 931132357450395959
+    second: owl_headrotate_12
+  - first:
+      213: 3848416584915549053
+    second: owl_headrotate_13
+  - first:
+      213: -7170125270431211979
+    second: owl_headrotate_14
+  - first:
+      213: 9125847562466064070
+    second: owl_headrotate_15
+  - first:
+      213: 8731370182698548207
+    second: owl_headrotate_16
+  - first:
+      213: -2031261557949288642
+    second: owl_headrotate_17
+  - first:
+      213: -1137221464832257800
+    second: owl_headrotate_18
+  - first:
+      213: 3872824163700608302
+    second: owl_headrotate_19
+  - first:
+      213: -2893158008901784845
+    second: owl_headrotate_20
+  - first:
+      213: 976743373198529225
+    second: owl_headrotate_21
+  - first:
+      213: -4531861448571781776
+    second: owl_headrotate_22
+  - first:
+      213: -1217237442874331778
+    second: owl_headrotate_23
+  - first:
+      213: 8046953768232550737
+    second: owl_headrotate_24
+  - first:
+      213: 9108427976554141573
+    second: owl_headrotate_25
+  - first:
+      213: -2926752548026277053
+    second: owl_headrotate_26
+  - first:
+      213: 2530982456266566834
+    second: owl_headrotate_27
+  - first:
+      213: -1908357820252812256
+    second: owl_headrotate_28
+  - first:
+      213: -5381500378645011718
+    second: owl_headrotate_29
+  - first:
+      213: -2380099572166460795
+    second: owl_headrotate_30
+  - first:
+      213: 9218035512167007417
+    second: owl_headrotate_31
+  - first:
+      213: -3511125865407467617
+    second: owl_headrotate_32
+  - first:
+      213: -7073756051837368793
+    second: owl_headrotate_33
+  - first:
+      213: 6258948440590388712
+    second: owl_headrotate_34
+  - first:
+      213: -6784061660673412958
+    second: owl_headrotate_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: owl_headrotate_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebeb3a661fe7eb4e0800000000000000
+      internalID: -1963992812212732226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: owl_headrotate_1
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e4e313d64c31380800000000000000
+      internalID: -9001635256926843302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: owl_headrotate_2
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61add5642d0f6eea0800000000000000
+      internalID: -5843718680552285674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: owl_headrotate_3
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c587f6c5d61487a0800000000000000
+      internalID: -6375946065027824191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: owl_headrotate_4
+      rect:
+        serializedVersion: 2
+        x: 15360
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0192b7797e4272590800000000000000
+      internalID: -7699144460869097200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: owl_headrotate_5
+      rect:
+        serializedVersion: 2
+        x: 19200
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 665950a7c407860d0800000000000000
+      internalID: -3429367642475621018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: owl_headrotate_6
+      rect:
+        serializedVersion: 2
+        x: 23040
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68d0b5d71d27fc90800000000000000
+      internalID: -7136185504152627089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d701f322179b219458e65deee416f309
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: False
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      owl_headrotate_0: -1963992812212732226
+      owl_headrotate_1: -9001635256926843302
+      owl_headrotate_10: 1831666109264104578
+      owl_headrotate_11: -1140083240056566851
+      owl_headrotate_12: 931132357450395959
+      owl_headrotate_13: 3848416584915549053
+      owl_headrotate_14: -7170125270431211979
+      owl_headrotate_15: 9125847562466064070
+      owl_headrotate_16: 8731370182698548207
+      owl_headrotate_17: -2031261557949288642
+      owl_headrotate_18: -1137221464832257800
+      owl_headrotate_19: 3872824163700608302
+      owl_headrotate_2: -5843718680552285674
+      owl_headrotate_20: -2893158008901784845
+      owl_headrotate_21: 976743373198529225
+      owl_headrotate_22: -4531861448571781776
+      owl_headrotate_23: -1217237442874331778
+      owl_headrotate_24: 8046953768232550737
+      owl_headrotate_25: 9108427976554141573
+      owl_headrotate_26: -2926752548026277053
+      owl_headrotate_27: 2530982456266566834
+      owl_headrotate_28: -1908357820252812256
+      owl_headrotate_29: -5381500378645011718
+      owl_headrotate_3: -6375946065027824191
+      owl_headrotate_30: -2380099572166460795
+      owl_headrotate_31: 9218035512167007417
+      owl_headrotate_32: -3511125865407467617
+      owl_headrotate_33: -7073756051837368793
+      owl_headrotate_34: 6258948440590388712
+      owl_headrotate_35: -6784061660673412958
+      owl_headrotate_4: -7699144460869097200
+      owl_headrotate_5: -3429367642475621018
+      owl_headrotate_6: -7136185504152627089
+      owl_headrotate_7: -4041738882069503306
+      owl_headrotate_8: 2834475496193251801
+      owl_headrotate_9: -1589586518942017879
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

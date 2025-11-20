@@ -4,7 +4,7 @@ public class ManaScatter : MonoBehaviour
 {
     [SerializeField] protected GameObject manaPrefab;
     [SerializeField] protected int count = 10;
-    [SerializeField] protected Vector2 areaSize = new Vector2(25f, 15f);
+    [SerializeField] protected Vector2 areaSize = new Vector2(250f, 150f);
     [SerializeField] protected AnimationCurve verticalDensity; 
 
     

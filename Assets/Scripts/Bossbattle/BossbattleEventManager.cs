@@ -42,7 +42,7 @@ public class BossbattleEventManager : MonoBehaviour
     public void SpawnBoss()
     {
         sceneRunning = true;
-        bossInstance = Instantiate(bossPrefab, new Vector3(0f, 0f, 0f), Quaternion.identity);
+        bossInstance = Instantiate(bossPrefab, new Vector3(0f, 25f, 0f), Quaternion.identity);
         bossPresent = true;
         Debug.Log("BossSpawn");
     }
