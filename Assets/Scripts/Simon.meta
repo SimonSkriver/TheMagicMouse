@@ -1,7 +1,12 @@
 fileFormatVersion: 2
-guid: 4c01d1b226cba0d4cac3bb327df86baf
+<<<<<<<< HEAD:Assets/Scripts/Simon.meta
+guid: 0eb86e5e1d8883e44adfdfbef315e757
 folderAsset: yes
 DefaultImporter:
+========
+guid: 292dd0ba7bd2f114085bb5113b67be56
+NativeFormatImporter:
+>>>>>>>> origin/Frederik:Assets/Animations/Idle.anim.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
