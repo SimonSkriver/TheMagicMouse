@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
     private bool jumpReleased;
     private int jumpsRemaining;
     private bool isWallSliding;
+    private bool isRunning;
+    private bool isStanding;
     private float wallJumpDirection;
     
     [Header ("Ground check settings")]
@@ -40,6 +42,9 @@ public class PlayerController : MonoBehaviour
     public LayerMask wallLayer;
     public float wallCheckRadius;
     private bool isWalled;
+
+    [Header ("Animation settings")]
+    [SerializeField] AnimationClip jumpAnimation;
     
     private float targetGravity;
     private bool isFacingRight = true;
@@ -54,10 +59,12 @@ public class PlayerController : MonoBehaviour
     {
         ApplyVariableGravity();
         CheckGrounded();
+        CheckRunning();
         Flip();
         CheckWalled();
         HandleWallJump();
         HandleCoyoteTime();
+        HandleAnimations();
     }
 
     void FixedUpdate()
@@ -171,6 +178,20 @@ public class PlayerController : MonoBehaviour
         isWalled = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, wallLayer);
     }
 
+    void CheckRunning()
+    {
+        if (moveInput.x != 0)
+        {
+            isRunning = true;
+            isStanding = false;
+        }
+        else
+        {
+            isRunning = false;
+            isStanding = true;
+        }
+    }
+
     void ApplyVariableGravity()
     {
         if (rb.linearVelocityY < -0.1f) // When falling
@@ -195,6 +216,20 @@ public class PlayerController : MonoBehaviour
             Vector3 ls = transform.localScale;
             ls.x *= -1f;
             transform.localScale = ls;
+        }
+    }
+
+    void HandleAnimations()
+    {
+        if (isRunning)
+        {
+            anim.SetBool("Running", true);
+            anim.SetBool("Idle", false);
+        }
+        else if (!isRunning)
+        {
+            anim.SetBool("Running", false);
+            anim.SetBool("Idle", true);
         }
     }
 
