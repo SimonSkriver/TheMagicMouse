@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9f1ebfce64977dd41b34684870ec86ef
+guid: 0ba1212380b5dbe48bd52c3049b0764f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3794321820042953579
-    second: vine_grow_0
+      213: 5050150251968819871
+    second: wall_hut_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,27 +96,40 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vine_grow_0
+      name: wall_hut_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 778
-        width: 1920
-        height: 142
-      alignment: 9
-      pivot: {x: 0.97949857, y: 0.50667816}
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b638c27979328a430800000000000000
-      internalID: 3794321820042953579
+      spriteID: f9273f6b5ecb51640800000000000000
+      internalID: 5050150251968819871
       vertices: []
       indices: 
       edges: []
@@ -125,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e4d6b6fcd32981942a458da3aaf6f271
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      vine_grow_0: 3794321820042953579
+      wall_hut_0: 5050150251968819871
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

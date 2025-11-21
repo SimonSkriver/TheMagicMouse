@@ -1,5 +1,8 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="mana-bar-background" style="flex-grow: 1; position: absolute; left: 20px; bottom: 20px; width: 200px; height: 25px; background-color: rgba(0, 0, 0, 0.53);">
-        <ui:VisualElement name="mana-bar-fill" style="flex-grow: 1; height: 100%; width: 0%; background-color: rgb(64, 129, 190);" />
+    <ui:VisualElement name="mana-bar-background" style="flex-grow: 1; width: 2%; height: 20%; background-color: rgba(0, 0, 0, 0.43); bottom: 2%; position: absolute; left: 1%; flex-direction: column-reverse; justify-content: flex-start;">
+        <ui:VisualElement name="mana-bar-fill" style="height: 9%; background-color: rgb(64, 129, 190);" />
     </ui:VisualElement>
+    <ui:VisualElement name="top-bar" style="flex-grow: 1; position: absolute; top: -129px; width: 100%; height: 10%; background-color: rgb(0, 0, 0); display: flex;" />
+    <ui:VisualElement name="bottom-bar" style="flex-grow: 1; position: absolute; top: auto; width: 100%; height: 10%; background-color: rgb(0, 0, 0); bottom: -129px; display: flex;" />
+    <ui:VisualElement name="lute-icon" style="flex-grow: 1; position: absolute; top: 3%; left: 2%; width: 5%; background-color: rgba(0, 0, 0, 0); display: none; background-image: url(&quot;project://database/Assets/Sprites/SingleSprites/Full%20HD/lute.png?fileID=2800000&amp;guid=ccd6dcbd9977a61459cf0c29e12704fb&amp;type=3#lute&quot;); height: 7%;" />
 </ui:UXML>
