@@ -32,7 +32,7 @@ public class BossbattleEventManager : MonoBehaviour
             BossReturn();
         }
         //Boss fleeing after 100 mana
-        if (playerCurrentMana >= playerFullMana && /*!bossPresent &&*/ sceneRunning)
+        if (playerCurrentMana >= playerFullMana && bossPresent && sceneRunning)
         {
             BossFleeing();
         }
