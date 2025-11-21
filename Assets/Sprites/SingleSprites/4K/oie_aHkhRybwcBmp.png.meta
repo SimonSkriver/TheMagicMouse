@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9f1ebfce64977dd41b34684870ec86ef
+guid: ad8b7c3487839b84684dd25eb0a1689c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3794321820042953579
-    second: vine_grow_0
+      213: 1831810918925792025
+    second: oie_aHkhRybwcBmp_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vine_grow_0
+      name: oie_aHkhRybwcBmp_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 778
-        width: 1920
-        height: 142
+        y: 162
+        width: 729
+        height: 160
       alignment: 9
-      pivot: {x: 0.97949857, y: 0.50667816}
+      pivot: {x: 0.0022985118, y: 0.6091129}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b638c27979328a430800000000000000
-      internalID: 3794321820042953579
+      spriteID: 913f04e4356eb6910800000000000000
+      internalID: 1831810918925792025
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e4d6b6fcd32981942a458da3aaf6f271
+    spriteID: 985d2aec48cf2ef47b0d1c501b20bfaf
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      vine_grow_0: 3794321820042953579
+      oie_aHkhRybwcBmp_0: 1831810918925792025
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
