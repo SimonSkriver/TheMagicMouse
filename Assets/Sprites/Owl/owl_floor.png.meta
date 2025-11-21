@@ -1,0 +1,296 @@
+fileFormatVersion: 2
+guid: 670a212a01bb4874283ee1449acead4c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1005584784561174025
+    second: owl_floor_0
+  - first:
+      213: -1970868777299335784
+    second: owl_floor_1
+  - first:
+      213: 8901700191151599066
+    second: owl_floor_2
+  - first:
+      213: -2943410904013687772
+    second: owl_floor_3
+  - first:
+      213: 3831624472876211714
+    second: owl_floor_4
+  - first:
+      213: 517895159639436245
+    second: owl_floor_5
+  - first:
+      213: 15254677252175435
+    second: owl_floor_6
+  - first:
+      213: -8360398632527281409
+    second: owl_floor_7
+  - first:
+      213: 5107779152834289065
+    second: owl_floor_8
+  - first:
+      213: -4395785508175465993
+    second: owl_floor_9
+  - first:
+      213: 7766310761449784333
+    second: owl_floor_10
+  - first:
+      213: 1959090061042827826
+    second: owl_floor_11
+  - first:
+      213: -1290599045545090512
+    second: owl_floor_12
+  - first:
+      213: 8031089634624350900
+    second: owl_floor_13
+  - first:
+      213: 4913311150487862993
+    second: owl_floor_14
+  - first:
+      213: 8267290690364491465
+    second: owl_floor_15
+  - first:
+      213: -5376439706510644291
+    second: owl_floor_16
+  - first:
+      213: -6999737172947054702
+    second: owl_floor_17
+  - first:
+      213: -8712701654554900734
+    second: owl_floor_18
+  - first:
+      213: 1643939690477479488
+    second: owl_floor_19
+  - first:
+      213: -4416764643376552142
+    second: owl_floor_20
+  - first:
+      213: -2578680967306559454
+    second: owl_floor_21
+  - first:
+      213: -7370199101362471866
+    second: owl_floor_22
+  - first:
+      213: 1186160231935600754
+    second: owl_floor_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: owl_floor_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3840
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f981bc57f17b02f0800000000000000
+      internalID: -1005584784561174025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: owl_floor_1
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 3840
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecbe40a03ce74745b7b0bd2176ecbb6
+      internalID: -1970868777299335784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: owl_floor_2
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 3840
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a40455cee3ae474e82e80f078e65557
+      internalID: 8901700191151599066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: owl_floor_3
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 0
+        width: 3840
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a04e0de387dec144bcfb9dd587c67b0
+      internalID: -2943410904013687772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 845215ba51d97304cac45ea638fad2c4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":3840.0,"y":2160.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      owl_floor_0: -1005584784561174025
+      owl_floor_1: -1970868777299335784
+      owl_floor_2: 8901700191151599066
+      owl_floor_3: -2943410904013687772
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BossbattleEventManager : MonoBehaviour
@@ -8,12 +9,19 @@ public class BossbattleEventManager : MonoBehaviour
     
     private bool sceneRunning;
     private bool bossPresent;
-    public float playerCurrentMana = 0f;
-    public float playerFullMana = 100f;
     
     [SerializeField] protected GameObject bossPrefab;
-    [SerializeField] protected GameObject bossInstance;
+    protected GameObject bossInstance;
+    private PlayerMana playerMana;
+    protected ManaScatter manaScatter;
 
+
+    void Awake()
+    {
+        manaScatter = GetComponent<ManaScatter>();
+        playerMana = FindAnyObjectByType<PlayerMana>();
+    }
+    
     void Update()
     {
         //Event timer counting up
@@ -32,7 +40,7 @@ public class BossbattleEventManager : MonoBehaviour
             BossReturn();
         }
         //Boss fleeing after 100 mana
-        if (playerCurrentMana >= playerFullMana && !bossPresent && sceneRunning)
+        if (playerMana.IsManaFull && !bossPresent && sceneRunning)
         {
             BossFleeing();
         }
@@ -42,7 +50,7 @@ public class BossbattleEventManager : MonoBehaviour
     public void SpawnBoss()
     {
         sceneRunning = true;
-        bossInstance = Instantiate(bossPrefab, new Vector3(0f, 0f, 0f), Quaternion.identity);
+        bossInstance = Instantiate(bossPrefab, new Vector3(0f, 25f, 0f), Quaternion.identity);
         bossPresent = true;
         Debug.Log("BossSpawn");
     }
@@ -53,6 +61,7 @@ public class BossbattleEventManager : MonoBehaviour
         eventTimer = 0f;
         bossInstance.GetComponent<Animator>().SetTrigger("Exit");
         bossInstance.GetComponent<Animator>().SetBool("IsScanning?", false);
+        manaScatter.ScatterMana();
         Debug.Log("BossExit");
     }
 
@@ -72,7 +81,7 @@ public class BossbattleEventManager : MonoBehaviour
         sceneRunning = false;
         bossInstance.GetComponent<Animator>().SetTrigger("Flee");
         bossInstance.GetComponent<Animator>().SetBool("IsScanning?", false);
-        Destroy(bossInstance, 2f);
+        Destroy(bossInstance, 10f);
         Debug.Log("BossFleeing");
     }
 }
