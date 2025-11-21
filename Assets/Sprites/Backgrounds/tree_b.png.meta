@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 3ca8a503c25b97543b2fc66e384ff7e4
+guid: 0ba1212380b5dbe48bd52c3049b0764f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7355644130669988610
-    second: tree_b_0
-  - first:
-      213: 8556790723572191031
-    second: tree_b_1
-  - first:
-      213: 1631175731826234424
-    second: tree_b_2
-  - first:
-      213: -6039715082157172150
-    second: tree_b_3
+      213: 5050150251968819871
+    second: wall_hut_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,16 +96,29 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tree_b_0
+      name: wall_hut_0
       rect:
         serializedVersion: 2
-        x: 88
+        x: 0
         y: 0
-        width: 250
+        width: 3840
         height: 2160
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,74 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef47a3192a08be990800000000000000
-      internalID: -7355644130669988610
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tree_b_1
-      rect:
-        serializedVersion: 2
-        x: 1023
-        y: 0
-        width: 187
-        height: 2160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 73fc0e7c3d3dfb670800000000000000
-      internalID: 8556790723572191031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tree_b_2
-      rect:
-        serializedVersion: 2
-        x: 1437
-        y: 0
-        width: 218
-        height: 2160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8349dbd8fa913a610800000000000000
-      internalID: 1631175731826234424
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tree_b_3
-      rect:
-        serializedVersion: 2
-        x: 1944
-        y: 0
-        width: 144
-        height: 2160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a4ad37fe12f9e2ca0800000000000000
-      internalID: -6039715082157172150
+      spriteID: f9273f6b5ecb51640800000000000000
+      internalID: 5050150251968819871
       vertices: []
       indices: 
       edges: []
@@ -210,10 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tree_b_0: -7355644130669988610
-      tree_b_1: 8556790723572191031
-      tree_b_2: 1631175731826234424
-      tree_b_3: -6039715082157172150
+      wall_hut_0: 5050150251968819871
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
