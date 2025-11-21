@@ -1,14 +1,12 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class OnGameStart : MonoBehaviour
 {
     public GameObject Player;
     public GameObject Button;
-    public Animator anim;
-    private float speed = 7f;
+    public float speed;
     private bool shouldMovePlayer;
-    private float targetPos = -3.5f;
+    private float targetPos = -12.1f;
 
     void Start()
     {
@@ -29,7 +27,6 @@ public class OnGameStart : MonoBehaviour
             {
                 shouldMovePlayer = false;
             }
-
         }
     }
 
