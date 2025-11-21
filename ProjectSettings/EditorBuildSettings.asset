@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/Starting scene.unity
+    guid: eb5137e0d5cfe304abe5c9c3aab272f2
+  - enabled: 1
+    path: Assets/Scenes/BlockOut.unity
+    guid: 0e4a5c2b1095cd84e8d9c28b823964bb
+  - enabled: 1
+    path: Assets/Scenes/TEST_Bossbattle_01.unity
+    guid: c808ad25cfeda674a92711da3193fd23
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
