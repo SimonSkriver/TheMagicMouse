@@ -7,7 +7,7 @@ public class PlayerMana : MonoBehaviour
     [Header("Mana Settings")]
     [Tooltip("The maximum amount of mana the player can hold.")]
     [SerializeField] private float maxMana = 100f;
-    private float currentMana;
+    public float currentMana;
 
     // C# event that other scripts can subscribe to. It fires whenever mana changes.
     public event Action<float, float> OnManaChanged;
