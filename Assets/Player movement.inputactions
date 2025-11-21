@@ -23,15 +23,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "Purify",
-                    "type": "Value",
-                    "id": "7a5c6e0a-6736-4aee-9e33-fb1773d444ff",
-                    "expectedControlType": "Analog",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -100,17 +91,6 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "ebf502bf-4a49-4f82-881e-5a8095d4c530",
-                    "path": "<Keyboard>/e",
-                    "interactions": "Hold(duration=0.7)",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Purify",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         }
