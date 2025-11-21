@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ShroomBounce : MonoBehaviour
+public class ShroomBounce2 : MonoBehaviour
 {
     [Tooltip("The total strength of the bounce.")]
     [SerializeField] private float bounceForce = 20f;
@@ -21,7 +21,7 @@ public class ShroomBounce : MonoBehaviour
                 Vector2 direction = transform.up;
 
                 // Tell the player controller to launch and lock input
-                player.Launch(direction * bounceForce, stunDuration);
+                //player.Launch(direction * bounceForce, stunDuration);
             }
         }
     }
