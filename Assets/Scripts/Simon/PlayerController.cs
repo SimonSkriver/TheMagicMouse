@@ -1,5 +1,8 @@
+using System.Runtime.InteropServices;
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Networking;
 
 public class PlayerController : MonoBehaviour
 {
@@ -7,6 +10,13 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     public SpriteRenderer sr; 
     public Animator anim;
+
+    [Header ("Audio")]
+    public AudioSource jumpAudioSource;
+    public AudioSource runAudioSource;
+    public AudioClip[] jumpClips;
+    public AudioClip runClip;
+    private bool runClipPlaying;
 
     [Header ("Movement settings")]
     [SerializeField] float moveSpeed = 5f;
@@ -30,6 +40,7 @@ public class PlayerController : MonoBehaviour
     private bool isRunning;
     private bool isStanding;
     private float wallJumpDirection;
+
     
     [Header ("Ground check settings")]
     public Transform groundCheck;
@@ -42,9 +53,6 @@ public class PlayerController : MonoBehaviour
     public LayerMask wallLayer;
     public float wallCheckRadius;
     private bool isWalled;
-
-    [Header ("Animation settings")]
-    [SerializeField] AnimationClip jumpAnimation;
     
     private float targetGravity;
     private bool isFacingRight = true;
@@ -65,6 +73,7 @@ public class PlayerController : MonoBehaviour
         HandleWallJump();
         HandleCoyoteTime();
         HandleAnimations();
+        HandleAudio();
     }
 
     void FixedUpdate()
@@ -151,6 +160,9 @@ public class PlayerController : MonoBehaviour
             if (coyoteTimeCounter > 0 || jumpsRemaining > 0)
             {
                 jumpPressed = true;
+                jumpAudioSource.clip = jumpClips[Random.Range(0, jumpClips.Length)];
+                jumpAudioSource.Play();
+
                 if (!isGrounded && coyoteTimeCounter <= 0)
                 {
                     jumpsRemaining--;
@@ -230,6 +242,21 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetBool("Running", false);
             anim.SetBool("Idle", true);
+        }
+    }
+
+    void HandleAudio()
+    {
+        if (isRunning && !runClipPlaying)
+        {
+            runClipPlaying = true;
+            runAudioSource.clip = runClip;
+            runAudioSource.Play();
+        }
+        else if (!isRunning)
+        {
+            runAudioSource.Pause();
+            runClipPlaying = false;
         }
     }
 
