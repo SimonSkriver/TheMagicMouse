@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
-    // Singleton Pattern: A single, globally accessible instance of the Quest Manager.
     public static QuestManager Instance { get; private set; }
 
-    // Enum to define the possible states of our quest.
     public enum QuestState
     {
         NotStarted,
@@ -17,14 +15,17 @@ public class QuestManager : MonoBehaviour
         Completed
     }
 
+    [Header("Debug")]
+    [Tooltip("Select a state here to start the game with it, or apply it during runtime via Context Menu.")]
+    [SerializeField] private QuestState debugStartState = QuestState.NotStarted;
+
+    // Variable is now visible in Debug mode, but protected
     public QuestState currentQuestState { get; private set; }
 
-    // C# Event that fires whenever the quest state changes.
     public event Action<QuestState> OnQuestStateChanged;
 
     private void Awake()
     {
-        // Singleton setup
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -32,19 +33,32 @@ public class QuestManager : MonoBehaviour
         else
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Optional: makes it persist between scenes.
+            DontDestroyOnLoad(gameObject);
         }
     }
 
-    // A public method that any script can call to advance the quest.
+    private void Start()
+    {
+        // Apply the debug state on start
+        if (debugStartState != QuestState.NotStarted)
+        {
+            SetQuestState(debugStartState);
+        }
+    }
+
+    // --- NEW: Right-click the script in Inspector to trigger this ---
+    [ContextMenu("Apply Debug State Now")]
+    public void ApplyDebugState()
+    {
+        SetQuestState(debugStartState);
+    }
+
     public void SetQuestState(QuestState newState)
     {
         if (newState == currentQuestState) return;
 
         currentQuestState = newState;
         Debug.Log("Quest state changed to: " + newState);
-
-        // Fire the event to notify all listeners (like the UI).
         OnQuestStateChanged?.Invoke(newState);
     }
 }
