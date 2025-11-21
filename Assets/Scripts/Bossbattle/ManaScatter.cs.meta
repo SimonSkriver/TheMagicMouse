@@ -1,2 +1,12 @@
 fileFormatVersion: 2
 guid: 1ebb91e033d317140bb6db580aa95cc9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - manaPrefab: {fileID: 7208853257868150848, guid: afaaecc261075dc42ab86055710835e5, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

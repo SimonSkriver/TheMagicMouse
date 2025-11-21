@@ -203,12 +203,12 @@ TextureImporter:
       name: owl_trapped_0
       rect:
         serializedVersion: 2
-        x: 1542
-        y: 288
-        width: 1053
-        height: 1807
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -225,12 +225,12 @@ TextureImporter:
       name: owl_trapped_1
       rect:
         serializedVersion: 2
-        x: 1983
-        y: 1976
-        width: 738
-        height: 157
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3840
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -247,12 +247,12 @@ TextureImporter:
       name: owl_trapped_2
       rect:
         serializedVersion: 2
-        x: 2399
-        y: 1719
-        width: 951
-        height: 387
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 7680
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -269,12 +269,12 @@ TextureImporter:
       name: owl_trapped_3
       rect:
         serializedVersion: 2
-        x: 5378
-        y: 965
-        width: 1763
-        height: 1143
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 11520
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -291,12 +291,12 @@ TextureImporter:
       name: owl_trapped_4
       rect:
         serializedVersion: 2
-        x: 9219
+        x: 15360
         y: 0
-        width: 2302
-        height: 2129
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 3840
+        height: 2160
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -313,12 +313,12 @@ TextureImporter:
       name: owl_trapped_5
       rect:
         serializedVersion: 2
-        x: 13067
-        y: 615
-        width: 1051
-        height: 1466
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 19200
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -331,539 +331,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: owl_trapped_6
-      rect:
-        serializedVersion: 2
-        x: 13211
-        y: 1756
-        width: 1115
-        height: 372
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 358c53843e8b29050800000000000000
-      internalID: 5805906155942561875
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_7
-      rect:
-        serializedVersion: 2
-        x: 14002
-        y: 2034
-        width: 633
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 121598e95a8a92d20800000000000000
-      internalID: 3254317635034763553
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_8
-      rect:
-        serializedVersion: 2
-        x: 14128
-        y: 0
-        width: 1233
-        height: 2072
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 69be0b8444a9bcfc0800000000000000
-      internalID: -3473513069518197866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_9
-      rect:
-        serializedVersion: 2
-        x: 14381
-        y: 2053
-        width: 284
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6b9ef81d8c451f210800000000000000
-      internalID: 1364965383556032950
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_10
-      rect:
-        serializedVersion: 2
-        x: 16912
-        y: 0
-        width: 2289
-        height: 2128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ece6dbf0a297cb570800000000000000
-      internalID: 8483789019618832078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_11
-      rect:
-        serializedVersion: 2
-        x: 20744
-        y: 0
-        width: 2296
-        height: 2137
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 402ccd2cb62ff50b0800000000000000
-      internalID: -5737600855602052604
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_12
-      rect:
-        serializedVersion: 2
-        x: 1886
-        y: 0
-        width: 751
-        height: 1046
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5259c4903d37299c0800000000000000
-      internalID: -3921944975254973147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_13
-      rect:
-        serializedVersion: 2
-        x: 2603
-        y: 977
-        width: 147
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0f116b153fd390580800000000000000
-      internalID: -8860482676617506320
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_14
-      rect:
-        serializedVersion: 2
-        x: 2608
-        y: 0
-        width: 1233
-        height: 1934
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 37d0b1a9175208440800000000000000
-      internalID: 4935986361445059955
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_15
-      rect:
-        serializedVersion: 2
-        x: 5435
-        y: 613
-        width: 175
-        height: 468
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 50bcb2e43dc1da080800000000000000
-      internalID: -9174645172008662267
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_16
-      rect:
-        serializedVersion: 2
-        x: 5513
-        y: 943
-        width: 663
-        height: 859
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5f77e83ba7617ecc0800000000000000
-      internalID: -3681949454097811467
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_17
-      rect:
-        serializedVersion: 2
-        x: 5726
-        y: 0
-        width: 862
-        height: 1069
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 800e5282eaf5ebf80800000000000000
-      internalID: -8088922679108313080
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_18
-      rect:
-        serializedVersion: 2
-        x: 5985
-        y: 680
-        width: 442
-        height: 724
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b9a11bfef43499a80800000000000000
-      internalID: -8459656414435927397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_19
-      rect:
-        serializedVersion: 2
-        x: 6448
-        y: 361
-        width: 1233
-        height: 1573
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0610851ff880f7ba0800000000000000
-      internalID: -6089138756859199136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_20
-      rect:
-        serializedVersion: 2
-        x: 7185
-        y: 0
-        width: 437
-        height: 1369
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: faf0985e65e8ca040800000000000000
-      internalID: 4660256218290917295
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_21
-      rect:
-        serializedVersion: 2
-        x: 13406
-        y: 0
-        width: 851
-        height: 1064
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 718f8faa321014c60800000000000000
-      internalID: 7800517282286336023
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_22
-      rect:
-        serializedVersion: 2
-        x: 5635
-        y: 255
-        width: 304
-        height: 456
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3ce51937fbda6e7c0800000000000000
-      internalID: -4042352577729175869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_23
-      rect:
-        serializedVersion: 2
-        x: 7515
-        y: 76
-        width: 166
-        height: 486
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b24ffa53e062dd580800000000000000
-      internalID: -8800836254339959765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_24
-      rect:
-        serializedVersion: 2
-        x: 13265
-        y: 313
-        width: 324
-        height: 581
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9a5bfb805a82b34a0800000000000000
-      internalID: -6612646938581944919
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_25
-      rect:
-        serializedVersion: 2
-        x: 3478
-        y: 0
-        width: 136
-        height: 201
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d5c02c6d239434a90800000000000000
-      internalID: -7330935285728801699
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_26
-      rect:
-        serializedVersion: 2
-        x: 7318
-        y: 0
-        width: 136
-        height: 201
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: daa0b021a2cabf670800000000000000
-      internalID: 8573635612321188525
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_27
-      rect:
-        serializedVersion: 2
-        x: 14998
-        y: 0
-        width: 136
-        height: 201
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5f9f6f3c64c70f320800000000000000
-      internalID: 2589706429115333109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_28
-      rect:
-        serializedVersion: 2
-        x: 18828
-        y: 0
-        width: 129
-        height: 191
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 41ff334e22c9bbb40800000000000000
-      internalID: 5457127047160921876
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_trapped_29
-      rect:
-        serializedVersion: 2
-        x: 18838
-        y: 0
-        width: 136
-        height: 201
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f04db53c30a24ed30800000000000000
-      internalID: 4459735726654477327
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0661a9bfa9d714e4ebcc61480b2343f0
     internalID: 0
     vertices: []
     indices: 

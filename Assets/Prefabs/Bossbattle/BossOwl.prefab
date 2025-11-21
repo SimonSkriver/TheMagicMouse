@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8258492202275639324}
   - component: {fileID: 8190504431973702262}
   - component: {fileID: 4512493519573879984}
+  - component: {fileID: 2902372403594351596}
   m_Layer: 0
   m_Name: BossOwl
   m_TagString: FinalBoss
@@ -115,6 +116,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2902372403594351596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4995772665193833179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66e7ceed84eb62146ad08d54126a2e41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerFallingTree
 --- !u!1001 &2413328572101933282
 PrefabInstance:
   m_ObjectHideFlags: 0
