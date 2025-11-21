@@ -59,11 +59,11 @@ public class PlayerPurify : MonoBehaviour
     public void OnPurify(InputValue value)
     {
         // Cutscene Gate
-        if (playerController != null && playerController.isInCutscene)
+        /*if (playerController != null && playerController.isInCutscene)
         {
             isHoldingButton = false;
             return;
-        }
+        }*/
 
         if (value.isPressed)
         {

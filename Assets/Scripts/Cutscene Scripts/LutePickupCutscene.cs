@@ -23,7 +23,7 @@ public class LutePickupCutscene : MonoBehaviour
             // Check if we are in the right state (or if we are debugging)
             if (QuestManager.Instance.currentQuestState == QuestManager.QuestState.MetNPC)
             {
-                StartCoroutine(PickupRoutine());
+                //StartCoroutine(PickupRoutine());
             }
             else
             {
@@ -32,7 +32,7 @@ public class LutePickupCutscene : MonoBehaviour
         }
     }
 
-    private IEnumerator PickupRoutine()
+    /*private IEnumerator PickupRoutine()
     {
         hasTriggered = true;
 
@@ -74,5 +74,5 @@ public class LutePickupCutscene : MonoBehaviour
 
         QuestManager.Instance.SetQuestState(QuestManager.QuestState.BranchBroken); // Update state so next events know
         gameObject.SetActive(false);
-    }
+    }*/
 }

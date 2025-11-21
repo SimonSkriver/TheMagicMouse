@@ -16,7 +16,7 @@ public class NPC_MeetCutscene : MonoBehaviour
     [Tooltip("How long to wait after each line of dialogue before showing the next.")]
     public float delayBetweenLines = 1f;
 
-    public void StartCutscene()
+    /*public void StartCutscene()
     {
         StartCoroutine(CutsceneRoutine());
     }
@@ -57,5 +57,5 @@ public class NPC_MeetCutscene : MonoBehaviour
         player.UnlockDoubleJump();
 
         player.ExitCutscene();
-    }
+    }*/
 }
