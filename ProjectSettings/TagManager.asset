@@ -40,17 +40,35 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Sky
+    uniqueID: 3957516339
+    locked: 0
+  - name: Parallax_Background
+    uniqueID: 132958703
+    locked: 0
+  - name: Parallax_Middleground
+    uniqueID: 4190689071
+    locked: 0
+  - name: Parallax_Foreground
+    uniqueID: 1715805103
+    locked: 0
+  - name: Background
+    uniqueID: 1565661945
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Wall
-    uniqueID: 1595058159
+  - name: Middleground
+    uniqueID: 497076893
     locked: 0
   - name: Floor
     uniqueID: 96908685
     locked: 0
-  - name: Middleground
-    uniqueID: 1715805103
+  - name: Wall
+    uniqueID: 1595058159
+    locked: 0
+  - name: Player
+    uniqueID: 1693626855
     locked: 0
   - name: Foreground
     uniqueID: 1256354741
