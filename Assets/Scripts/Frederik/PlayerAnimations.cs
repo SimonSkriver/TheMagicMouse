@@ -23,18 +23,25 @@ public class PlayerAnimations : MonoBehaviour
     {
         CheckGrounded();
         HandleAnimationLogic();
+        
         // Opdater "var vi på jorden sidst?" til næste frame
         wasGrounded = isGrounded;
+        lastVerticalVelocity = rb.linearVelocity.y;
     }
 
     private void CheckGrounded()
     {
+        // Simpel cirkel check for at se om vi rører jorden
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        
+        // Fortæl animatoren om vi er på jorden eller ej (hvis den bruger det parameter)
         anim.SetBool("IsGrounded", isGrounded);
     }
 
     private void HandleAnimationLogic()
     {
+        // Opdater den vertikale hastighed (god til blend trees)
+
         // 1. JumpStart (Hoppe start)
         // Hvis vi ikke er på jorden, men VAR på jorden lige før, og vi bevæger os opad
         if (!isGrounded && wasGrounded && rb.linearVelocity.y > 0.1f)
