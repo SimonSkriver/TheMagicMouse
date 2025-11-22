@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: 903998165848546456}
   - component: {fileID: 1120557057788547492}
   - component: {fileID: 7526010404938834752}
+  - component: {fileID: -1802744965909859247}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -183,7 +184,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1715805103
-  m_SortingLayer: 3
+  m_SortingLayer: -2
   m_SortingOrder: 17
   m_Sprite: {fileID: 8584986706017283902, guid: 557d9ce2c332e4d448378603ea59df5b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -354,6 +355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMana
   maxMana: 100
+  currentMana: 0
 --- !u!114 &6744816782857990301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,12 +368,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57810a835e604154fadaa22245979318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerPurify
-  smallPulsePrefab: {fileID: 8593478205086570216, guid: ecf54acdc596c6947a491f56cfd07da3, type: 3}
+  pulsePrefab: {fileID: 0}
   staffFirePoint: {fileID: 4580810479823212561}
   smallPulseRadius: 5
   smallPulseDuration: 0.5
+  smallPulseCooldown: 0.5
   bigPulseRadius: 15
   bigPulseDuration: 1
+  holdTimeThreshold: 0.4
 --- !u!95 &-5042322237167197784
 Animator:
   serializedVersion: 7
@@ -641,3 +645,27 @@ MonoBehaviour:
     - rid: 1873303316215627849
       type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
       data: 
+--- !u!114 &-1802744965909859247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5571484971666131518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c114e93f1a63c6d438de8f44735c59b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimations
+  rb: {fileID: 7822954264791147308}
+  anim: {fileID: -5042322237167197784}
+  groundCheck: {fileID: 1781874908145886555}
+  groundCheckRadius: 1.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 192
+  jumpStartParam: JumpStart
+  jumpInAirParam: IsInAir
+  jumpLandParam: JumpLand
+  doubleJumpParam: DoubleJump
+  verticalVelocityParam: VerticalVelocity

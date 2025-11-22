@@ -115,12 +115,12 @@ TextureImporter:
       name: RISEJUMP_0
       rect:
         serializedVersion: 2
-        x: 40
-        y: 151
-        width: 1892
-        height: 1897
+        x: 0
+        y: 0
+        width: 2048
+        height: 2048
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -137,12 +137,12 @@ TextureImporter:
       name: RISEJUMP_1
       rect:
         serializedVersion: 2
-        x: 2047
-        y: 124
-        width: 1927
-        height: 1914
+        x: 2048
+        y: 0
+        width: 2048
+        height: 2048
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -159,12 +159,12 @@ TextureImporter:
       name: RISEJUMP_2
       rect:
         serializedVersion: 2
-        x: 4139
+        x: 4096
         y: 0
-        width: 2005
-        height: 1900
+        width: 2048
+        height: 2048
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -177,55 +177,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: RISEJUMP_3
-      rect:
-        serializedVersion: 2
-        x: 1678
-        y: 98
-        width: 7
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 98c4f6e4ab5fb6a70800000000000000
-      internalID: 8821414475663887497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RISEJUMP_4
-      rect:
-        serializedVersion: 2
-        x: 3063
-        y: 104
-        width: 22
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 99e52472a80acd8f0800000000000000
-      internalID: -514359742202487143
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b22706d428278334b9cca2c481d47269
     internalID: 0
     vertices: []
     indices: 
@@ -233,13 +189,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":2048.0,"y":2048.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       RISEJUMP_0: 7010282689472107803
       RISEJUMP_1: -6900267497853511151
       RISEJUMP_2: 3263201175331434334
-      RISEJUMP_3: 8821414475663887497
-      RISEJUMP_4: -514359742202487143
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
