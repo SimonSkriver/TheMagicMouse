@@ -111,13 +111,22 @@ public partial class @Playermovement: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Purify"",
-                    ""type"": ""Value"",
-                    ""id"": ""7a5c6e0a-6736-4aee-9e33-fb1773d444ff"",
-                    ""expectedControlType"": ""Analog"",
+                    ""name"": ""SmallPurify"",
+                    ""type"": ""Button"",
+                    ""id"": ""de3aa1f1-7331-4f86-852e-3c5c7b086d02"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""BigPurify"",
+                    ""type"": ""Button"",
+                    ""id"": ""42cff6a5-65e0-4543-b0bc-c2004e696f01"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -189,12 +198,23 @@ public partial class @Playermovement: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""ebf502bf-4a49-4f82-881e-5a8095d4c530"",
+                    ""id"": ""e1b0dacb-73ec-4d1d-8a7b-b9b47cfd6280"",
                     ""path"": ""<Keyboard>/e"",
-                    ""interactions"": ""Hold(duration=0.7)"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Purify"",
+                    ""action"": ""SmallPurify"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""71664627-d8ac-4de7-96f8-53a102759306"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""BigPurify"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -207,7 +227,8 @@ public partial class @Playermovement: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
-        m_Player_Purify = m_Player.FindAction("Purify", throwIfNotFound: true);
+        m_Player_SmallPurify = m_Player.FindAction("SmallPurify", throwIfNotFound: true);
+        m_Player_BigPurify = m_Player.FindAction("BigPurify", throwIfNotFound: true);
     }
 
     ~@Playermovement()
@@ -290,7 +311,8 @@ public partial class @Playermovement: IInputActionCollection2, IDisposable
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_Move;
-    private readonly InputAction m_Player_Purify;
+    private readonly InputAction m_Player_SmallPurify;
+    private readonly InputAction m_Player_BigPurify;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -311,9 +333,13 @@ public partial class @Playermovement: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @Move => m_Wrapper.m_Player_Move;
         /// <summary>
-        /// Provides access to the underlying input action "Player/Purify".
+        /// Provides access to the underlying input action "Player/SmallPurify".
         /// </summary>
-        public InputAction @Purify => m_Wrapper.m_Player_Purify;
+        public InputAction @SmallPurify => m_Wrapper.m_Player_SmallPurify;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/BigPurify".
+        /// </summary>
+        public InputAction @BigPurify => m_Wrapper.m_Player_BigPurify;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -346,9 +372,12 @@ public partial class @Playermovement: IInputActionCollection2, IDisposable
             @Move.started += instance.OnMove;
             @Move.performed += instance.OnMove;
             @Move.canceled += instance.OnMove;
-            @Purify.started += instance.OnPurify;
-            @Purify.performed += instance.OnPurify;
-            @Purify.canceled += instance.OnPurify;
+            @SmallPurify.started += instance.OnSmallPurify;
+            @SmallPurify.performed += instance.OnSmallPurify;
+            @SmallPurify.canceled += instance.OnSmallPurify;
+            @BigPurify.started += instance.OnBigPurify;
+            @BigPurify.performed += instance.OnBigPurify;
+            @BigPurify.canceled += instance.OnBigPurify;
         }
 
         /// <summary>
@@ -366,9 +395,12 @@ public partial class @Playermovement: IInputActionCollection2, IDisposable
             @Move.started -= instance.OnMove;
             @Move.performed -= instance.OnMove;
             @Move.canceled -= instance.OnMove;
-            @Purify.started -= instance.OnPurify;
-            @Purify.performed -= instance.OnPurify;
-            @Purify.canceled -= instance.OnPurify;
+            @SmallPurify.started -= instance.OnSmallPurify;
+            @SmallPurify.performed -= instance.OnSmallPurify;
+            @SmallPurify.canceled -= instance.OnSmallPurify;
+            @BigPurify.started -= instance.OnBigPurify;
+            @BigPurify.performed -= instance.OnBigPurify;
+            @BigPurify.canceled -= instance.OnBigPurify;
         }
 
         /// <summary>
@@ -424,11 +456,18 @@ public partial class @Playermovement: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnMove(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Purify" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "SmallPurify" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnPurify(InputAction.CallbackContext context);
+        void OnSmallPurify(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "BigPurify" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnBigPurify(InputAction.CallbackContext context);
     }
 }
