@@ -24,7 +24,8 @@ public class PurifyOwl : MonoBehaviour
 
     void Start()
     {
-        manaOnPlayer.currentMana = 100f;
+        //Debug line to set player 100 mana
+        //manaOnPlayer.currentMana = 100f;
     }
 
     void Update()
