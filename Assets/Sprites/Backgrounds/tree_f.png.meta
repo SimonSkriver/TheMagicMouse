@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 17dbed2299d25944c9ad636f2c299305
+guid: 908cc970d5d743f478a279f33be8e67c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4909683154563163054
-    second: idlevenstre0004_0
+      213: 7890840970064086571
+    second: tree_f_0
+  - first:
+      213: 1678317055632244195
+    second: tree_f_1
+  - first:
+      213: -286206803589839282
+    second: tree_f_2
+  - first:
+      213: -3799626990789834593
+    second: tree_f_3
+  - first:
+      213: -7171859509198475318
+    second: tree_f_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +84,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -96,27 +108,62 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idlevenstre0004_0
+      name: tree_f_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 10
-        width: 1124
-        height: 1303
+        y: 0
+        width: 2130
+        height: 2160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 25c1b8cfe2d4ddbb0800000000000000
-      internalID: -4909683154563163054
+      spriteID: 0df394b80552ac846a51da7a5348935f
+      internalID: 7890840970064086571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_f_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2130
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e6aa6ab98dd5645ba3f2dd8f89dbbc
+      internalID: 1678317055632244195
       vertices: []
       indices: 
       edges: []
@@ -125,7 +172,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: de86b06408e43264ca420bb11d5cfd65
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +180,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      idlevenstre0004_0: -4909683154563163054
+      tree_f_0: 7890840970064086571
+      tree_f_1: 1678317055632244195
+      tree_f_2: -286206803589839282
+      tree_f_3: -3799626990789834593
+      tree_f_4: -7171859509198475318
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

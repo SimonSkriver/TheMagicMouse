@@ -1,0 +1,412 @@
+fileFormatVersion: 2
+guid: 9ac0d3b15efa8b74fa11a7f3f322a2bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1112948690706322780
+    second: owl_flyidle_0
+  - first:
+      213: 571906387816864257
+    second: owl_flyidle_1
+  - first:
+      213: 3219975659077340405
+    second: owl_flyidle_2
+  - first:
+      213: 6294915512297935242
+    second: owl_flyidle_3
+  - first:
+      213: -9138750016791370865
+    second: owl_flyidle_4
+  - first:
+      213: 1666968058018066069
+    second: owl_flyidle_5
+  - first:
+      213: -6572649855286887509
+    second: owl_flyidle_6
+  - first:
+      213: 5744234991121783909
+    second: owl_flyidle_7
+  - first:
+      213: 7762583085207917861
+    second: owl_flyidle_8
+  - first:
+      213: 215716625091454227
+    second: owl_flyidle_9
+  - first:
+      213: 2141689481128053997
+    second: owl_flyidle_10
+  - first:
+      213: -6501661354842401863
+    second: owl_flyidle_11
+  - first:
+      213: 4478508264428580047
+    second: owl_flyidle_12
+  - first:
+      213: -1237655165334484301
+    second: owl_flyidle_13
+  - first:
+      213: -4603135701050860341
+    second: owl_flyidle_14
+  - first:
+      213: -2136404800719932561
+    second: owl_flyidle_15
+  - first:
+      213: -7540164040900781354
+    second: owl_flyidle_16
+  - first:
+      213: -8273343610651532524
+    second: owl_flyidle_17
+  - first:
+      213: -5504873255995379481
+    second: owl_flyidle_18
+  - first:
+      213: 3012019806597553108
+    second: owl_flyidle_19
+  - first:
+      213: 865246595886765545
+    second: owl_flyidle_20
+  - first:
+      213: -6675648847921115072
+    second: owl_flyidle_21
+  - first:
+      213: -5710403525000655881
+    second: owl_flyidle_22
+  - first:
+      213: 2319425876903703421
+    second: owl_flyidle_23
+  - first:
+      213: -5287652306153322759
+    second: owl_flyidle_24
+  - first:
+      213: 5310264253073138912
+    second: owl_flyidle_25
+  - first:
+      213: -1222007260878829236
+    second: owl_flyidle_26
+  - first:
+      213: -1818854232313713220
+    second: owl_flyidle_27
+  - first:
+      213: 7612378885499428325
+    second: owl_flyidle_28
+  - first:
+      213: 4059909009641354289
+    second: owl_flyidle_29
+  - first:
+      213: -9029579012910356409
+    second: owl_flyidle_30
+  - first:
+      213: 8523962445550041064
+    second: owl_flyidle_31
+  - first:
+      213: -7158951290372995512
+    second: owl_flyidle_32
+  - first:
+      213: -7729142300759001484
+    second: owl_flyidle_33
+  - first:
+      213: -7486390695598038778
+    second: owl_flyidle_34
+  - first:
+      213: -9032622758747841577
+    second: owl_flyidle_35
+  - first:
+      213: 2038719590601250150
+    second: owl_flyidle_36
+  - first:
+      213: -4280128806033989257
+    second: owl_flyidle_37
+  - first:
+      213: 7391997669695304255
+    second: owl_flyidle_38
+  - first:
+      213: -4663136272263633213
+    second: owl_flyidle_39
+  - first:
+      213: -3121231043621216904
+    second: owl_flyidle_40
+  - first:
+      213: 1354043502773890896
+    second: owl_flyidle_41
+  - first:
+      213: 3000963972513315447
+    second: owl_flyidle_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: owl_flyidle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5559c200fcf17f00800000000000000
+      internalID: 1112948690706322780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: owl_flyidle_1
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ad99264d1dfe700800000000000000
+      internalID: 571906387816864257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: owl_flyidle_2
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc85b04dc6afac20800000000000000
+      internalID: 3219975659077340405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: owl_flyidle_3
+      rect:
+        serializedVersion: 2
+        x: 11520
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a815d997e480c5750800000000000000
+      internalID: 6294915512297935242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: owl_flyidle_4
+      rect:
+        serializedVersion: 2
+        x: 15360
+        y: 0
+        width: 3840
+        height: 2160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f832e066743ac2180800000000000000
+      internalID: -9138750016791370865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ce58b4925556aea40bc5e8f4f5147865
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      owl_flyidle_0: 1112948690706322780
+      owl_flyidle_1: 571906387816864257
+      owl_flyidle_10: 2141689481128053997
+      owl_flyidle_11: -6501661354842401863
+      owl_flyidle_12: 4478508264428580047
+      owl_flyidle_13: -1237655165334484301
+      owl_flyidle_14: -4603135701050860341
+      owl_flyidle_15: -2136404800719932561
+      owl_flyidle_16: -7540164040900781354
+      owl_flyidle_17: -8273343610651532524
+      owl_flyidle_18: -5504873255995379481
+      owl_flyidle_19: 3012019806597553108
+      owl_flyidle_2: 3219975659077340405
+      owl_flyidle_20: 865246595886765545
+      owl_flyidle_21: -6675648847921115072
+      owl_flyidle_22: -5710403525000655881
+      owl_flyidle_23: 2319425876903703421
+      owl_flyidle_24: -5287652306153322759
+      owl_flyidle_25: 5310264253073138912
+      owl_flyidle_26: -1222007260878829236
+      owl_flyidle_27: -1818854232313713220
+      owl_flyidle_28: 7612378885499428325
+      owl_flyidle_29: 4059909009641354289
+      owl_flyidle_3: 6294915512297935242
+      owl_flyidle_30: -9029579012910356409
+      owl_flyidle_31: 8523962445550041064
+      owl_flyidle_32: -7158951290372995512
+      owl_flyidle_33: -7729142300759001484
+      owl_flyidle_34: -7486390695598038778
+      owl_flyidle_35: -9032622758747841577
+      owl_flyidle_36: 2038719590601250150
+      owl_flyidle_37: -4280128806033989257
+      owl_flyidle_38: 7391997669695304255
+      owl_flyidle_39: -4663136272263633213
+      owl_flyidle_4: -9138750016791370865
+      owl_flyidle_40: -3121231043621216904
+      owl_flyidle_41: 1354043502773890896
+      owl_flyidle_42: 3000963972513315447
+      owl_flyidle_5: 1666968058018066069
+      owl_flyidle_6: -6572649855286887509
+      owl_flyidle_7: 5744234991121783909
+      owl_flyidle_8: 7762583085207917861
+      owl_flyidle_9: 215716625091454227
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

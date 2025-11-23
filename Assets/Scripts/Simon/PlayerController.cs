@@ -1,8 +1,5 @@
-using System.Runtime.InteropServices;
-using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Networking;
 
 public class PlayerController : MonoBehaviour
 {
@@ -222,7 +219,7 @@ public class PlayerController : MonoBehaviour
 
     void Flip()
     {
-        if (isFacingRight && moveInput.x < 0 || !isFacingRight && moveInput.x > 0) // If we're facing right but moving left or if we're facing left but moving right.
+        if (isFacingRight && rb.linearVelocityX < 0 || !isFacingRight && rb.linearVelocityX > 0) // If we're facing right but moving left or if we're facing left but moving right.
         {
             isFacingRight = !isFacingRight;
             Vector3 ls = transform.localScale;
