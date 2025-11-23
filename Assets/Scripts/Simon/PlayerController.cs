@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     [Header ("Movement settings")]
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float jumpForce = 5f;
+    [SerializeField] float secondJumpForce = 60f;
     [SerializeField] float jumpCutMultiplier = 0.5f; // How much jump velocity is removed when button is released
     [SerializeField] int maxJumps = 2;
     [SerializeField] float normalGravity;
@@ -31,24 +32,22 @@ public class PlayerController : MonoBehaviour
     private float wallJumpLockTimer;
     private Vector2 moveInput;
     private bool jumpPressed;
-    private bool jumpReleased;
     private int jumpsRemaining;
     private bool isWallSliding;
     private bool isRunning;
     private bool isStanding;
     private float wallJumpDirection;
-
+    private bool isGrounded;
     
     [Header ("Ground check settings")]
     public Transform groundCheck;
     public LayerMask groundLayer;
-    public float groundCheckRadius;
-    private bool isGrounded;
+    public Vector2 groundCeckSize;
 
     [Header ("Wall check settings")]
     public Transform wallCheck;
     public LayerMask wallLayer;
-    public float wallCheckRadius;
+    public Vector2 wallCheckSize;
     private bool isWalled;
     
     private float targetGravity;
@@ -92,20 +91,17 @@ public class PlayerController : MonoBehaviour
 
     void HandleJumping()
     {
-        if (jumpPressed)
+        if (jumpPressed && jumpsRemaining >= 2)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
             jumpPressed = false;
-            jumpReleased = false;
             jumpsRemaining --; 
         }
-        if (jumpReleased)
+
+        else if (jumpPressed && jumpsRemaining < 2)
         {
-            if (rb.linearVelocityY > 0f)
-            {
-                rb.linearVelocity = new Vector2(rb.linearVelocityX, rb.linearVelocityY * jumpCutMultiplier);
-            }
-            jumpReleased = false;
+            rb.linearVelocity = new Vector2(rb.linearVelocityX, secondJumpForce);
+            jumpPressed = false;
         }
     }
 
@@ -168,14 +164,13 @@ public class PlayerController : MonoBehaviour
         }
         else // When jump button is released
         {
-            jumpReleased = true;
             coyoteTimeCounter = 0;
         }
     }
 
     void CheckGrounded()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCeckSize, groundLayer);
         if (isGrounded)
         {
             jumpsRemaining = maxJumps;
@@ -184,7 +179,7 @@ public class PlayerController : MonoBehaviour
 
     void CheckWalled()
     {
-        isWalled = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, wallLayer);
+        isWalled = Physics2D.OverlapBox(wallCheck.position, wallCheckSize, wallLayer);
     }
 
     void CheckRunning()
@@ -260,7 +255,7 @@ public class PlayerController : MonoBehaviour
     private void OnDrawGizmosSelected() // This is for debugging purposes. Draws a ring around the groundcheck GameObject
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
-        Gizmos.DrawWireSphere(wallCheck.position, wallCheckRadius);
+        Gizmos.DrawWireCube(groundCheck.position, groundCeckSize);
+        Gizmos.DrawWireCube(wallCheck.position, wallCheckSize);
     }
 }

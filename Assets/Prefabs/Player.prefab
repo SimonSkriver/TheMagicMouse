@@ -250,7 +250,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4937b3e595447cf4baabb0373df3abdf, type: 3}
   runClip: {fileID: 8300000, guid: b79a9fac857a7ae42824f09ef8e638fc, type: 3}
   moveSpeed: 80
-  jumpForce: 140
+  jumpForce: 120
+  secondJumpForce: 60
   jumpCutMultiplier: 0.2
   maxJumps: 2
   normalGravity: 50
@@ -263,13 +264,13 @@ MonoBehaviour:
   groundCheck: {fileID: 1781874908145886555}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 192
-  groundCheckRadius: 1.5
+    m_Bits: 64
+  groundCeckSize: {x: 15, y: 2}
   wallCheck: {fileID: 6150615613593946845}
   wallLayer:
     serializedVersion: 2
     m_Bits: 128
-  wallCheckRadius: 1.5
+  wallCheckSize: {x: 5, y: 20}
 --- !u!114 &8268663906928180552
 MonoBehaviour:
   m_ObjectHideFlags: 0
