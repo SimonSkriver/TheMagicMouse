@@ -4,14 +4,14 @@ using UnityEngine;
 public class PlayerPurify : MonoBehaviour
 {
     private PlayerMana manaOnPlayer;
-    private bool isNearSmallCorruption;
-    private bool isNearBigCorruption;
+    private Collider2D smallCorruptionCollider;
+    private Collider2D bigCorruptionCollider;
+
+    [Header ("Corruption check settings")]
     public Transform corruptionCheck;
     public LayerMask smallCorruption;
     public LayerMask bigCorruption;
     public float corruptionCheckRadius;
-    public GameObject smallCorruptionObject;
-    public GameObject bigCorruptionObject;
 
 
     void Awake()
@@ -31,28 +31,29 @@ public class PlayerPurify : MonoBehaviour
 
     void checkCorruption()
     {
-        isNearSmallCorruption = Physics2D.OverlapCircle(corruptionCheck.position, corruptionCheckRadius, smallCorruption);
-        isNearBigCorruption = Physics2D.OverlapCircle(corruptionCheck.position, corruptionCheckRadius, bigCorruption);
+        smallCorruptionCollider = Physics2D.OverlapCircle(corruptionCheck.position, corruptionCheckRadius, smallCorruption);
+        bigCorruptionCollider = Physics2D.OverlapCircle(corruptionCheck.position, corruptionCheckRadius, bigCorruption);
     }
 
     void OnSmallPurify()
     {
         Debug.Log("Small purify called");
-        if (isNearSmallCorruption)
+        if (smallCorruptionCollider != null)
         {
-            Destroy(smallCorruptionObject);
+            Destroy(smallCorruptionCollider.gameObject);
         }
     }
 
     void OnBigPurify()
     {
-        if (manaOnPlayer.IsManaFull)
+        if (manaOnPlayer.IsManaFull && bigCorruptionCollider != null)
         {
-            Destroy(bigCorruptionObject);
+            Destroy(bigCorruptionCollider.gameObject);
+            manaOnPlayer.currentMana = 0; 
         }
         else
         {
-            Debug.Log("You don't have enough mana!");
+            Debug.Log("You don't have enough");
         }
     }
 
