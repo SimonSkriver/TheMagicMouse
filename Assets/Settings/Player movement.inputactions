@@ -25,13 +25,22 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Purify",
-                    "type": "Value",
-                    "id": "7a5c6e0a-6736-4aee-9e33-fb1773d444ff",
-                    "expectedControlType": "Analog",
+                    "name": "SmallPurify",
+                    "type": "Button",
+                    "id": "de3aa1f1-7331-4f86-852e-3c5c7b086d02",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "BigPurify",
+                    "type": "Button",
+                    "id": "42cff6a5-65e0-4543-b0bc-c2004e696f01",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -103,12 +112,23 @@
                 },
                 {
                     "name": "",
-                    "id": "ebf502bf-4a49-4f82-881e-5a8095d4c530",
+                    "id": "e1b0dacb-73ec-4d1d-8a7b-b9b47cfd6280",
                     "path": "<Keyboard>/e",
-                    "interactions": "Hold(duration=0.7)",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Purify",
+                    "action": "SmallPurify",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "71664627-d8ac-4de7-96f8-53a102759306",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BigPurify",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

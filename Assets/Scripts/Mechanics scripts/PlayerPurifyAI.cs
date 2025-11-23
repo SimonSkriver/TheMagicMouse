@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
 
-public class PlayerPurify : MonoBehaviour
+public class PlayerPurifyAI : MonoBehaviour
 {
     [Header("Pulse Prefab")]
     [SerializeField] private GameObject pulsePrefab;
