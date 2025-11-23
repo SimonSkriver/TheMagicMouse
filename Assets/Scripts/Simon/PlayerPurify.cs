@@ -11,6 +11,7 @@ public class PlayerPurify : MonoBehaviour
     public LayerMask bigCorruption;
     public float corruptionCheckRadius;
     public GameObject smallCorruptionObject;
+    public GameObject bigCorruptionObject;
 
 
     void Awake()
@@ -36,6 +37,7 @@ public class PlayerPurify : MonoBehaviour
 
     void OnSmallPurify()
     {
+        Debug.Log("Small purify called");
         if (isNearSmallCorruption)
         {
             Destroy(smallCorruptionObject);
@@ -44,7 +46,14 @@ public class PlayerPurify : MonoBehaviour
 
     void OnBigPurify()
     {
-        
+        if (manaOnPlayer.IsManaFull)
+        {
+            Destroy(bigCorruptionObject);
+        }
+        else
+        {
+            Debug.Log("You don't have enough mana!");
+        }
     }
 
     void OnDrawGizmosSelected()
