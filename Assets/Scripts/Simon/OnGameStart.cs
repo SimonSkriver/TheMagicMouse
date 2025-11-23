@@ -10,6 +10,7 @@ public class OnGameStart : MonoBehaviour
     public PlayerController pc;
     private bool buttonHasBeenPressed = false;
     public float secondsAfterButtonPress = 2f;
+
     void Start()
     {
         pc.enabled = false;
@@ -18,6 +19,7 @@ public class OnGameStart : MonoBehaviour
     {
         EnablePlayerControls();
     }
+
     void FixedUpdate()
     {
         if (shouldMovePlayer)
@@ -35,6 +37,7 @@ public class OnGameStart : MonoBehaviour
             }
         }
     }
+
     public void ButtonPress()
     {
         shouldMovePlayer = true;
@@ -50,8 +53,8 @@ public class OnGameStart : MonoBehaviour
     {
      if (buttonHasBeenPressed == true) //if statements går altid ud fra at men checker om ens boolean er true unless man checker at den er = false
         {
-            Invoke("PlayerCanMove", secondsAfterButtonPress);
-         Debug.Log("Player Controllers enabled.");
+        Invoke("PlayerCanMove", secondsAfterButtonPress);
+        //Debug.Log("Player Controllers enabled.");
         }
     }
 }
