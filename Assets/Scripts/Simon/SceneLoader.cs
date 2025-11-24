@@ -6,7 +6,7 @@ public class SceneLoader : MonoBehaviour
 {
     [SerializeField] string nextScene;
     public Animator transition;
-    [SerializeField] private float transitionDuration = 1f; //Unified duration of transition, which is adjustable
+    [SerializeField] private float transitionDuration = 1f; //Overall duration of transition, which is adjustable
     private float fadeAnimInSeconds = 1f; //duration of keyframed transition anim. NO TOUCHY!!
 
     
