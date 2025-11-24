@@ -40,6 +40,7 @@ public class PlayerMana : MonoBehaviour
             currentMana = 0;
             Debug.Log("Big Purify used all mana!");
             OnManaChanged?.Invoke(currentMana, maxMana);
+
         }
     }
 }

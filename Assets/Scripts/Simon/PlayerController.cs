@@ -3,19 +3,19 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header ("Components")]
+    [Header("Components")]
     public Rigidbody2D rb;
-    public SpriteRenderer sr; 
-    public Animator anim;
+    public SpriteRenderer sr;
+    // public Animator anim; flyttet til animations script
 
-    [Header ("Audio")]
+    [Header("Audio")]
     public AudioSource jumpAudioSource;
     public AudioSource runAudioSource;
     public AudioClip[] jumpClips;
     public AudioClip runClip;
     private bool runClipPlaying;
 
-    [Header ("Movement settings")]
+    [Header("Movement settings")]
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float jumpForce = 5f;
     [SerializeField] float secondJumpForce = 60f;
@@ -38,21 +38,21 @@ public class PlayerController : MonoBehaviour
     private bool isStanding;
     private float wallJumpDirection;
     private bool isGrounded;
-    
-    [Header ("Ground check settings")]
+
+    [Header("Ground check settings")]
     public Transform groundCheck;
     public LayerMask groundLayer;
     public Vector2 groundCeckSize;
 
-    [Header ("Wall check settings")]
+    [Header("Wall check settings")]
     public Transform wallCheck;
     public LayerMask wallLayer;
     public Vector2 wallCheckSize;
     private bool isWalled;
-    
+
     private float targetGravity;
     private bool isFacingRight = true;
-    
+
 
     void Start()
     {
@@ -64,11 +64,11 @@ public class PlayerController : MonoBehaviour
         ApplyVariableGravity();
         CheckGrounded();
         CheckRunning();
-        Flip();
+        // Flip(); // Moved to PlayerAnimations
         CheckWalled();
         HandleWallJump();
         HandleCoyoteTime();
-        HandleAnimations();
+        // HandleAnimations(); // Moved to PlayerAnimations
         HandleAudio();
     }
 
@@ -95,7 +95,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
             jumpPressed = false;
-            jumpsRemaining --; 
+            jumpsRemaining--;
         }
 
         else if (jumpPressed && jumpsRemaining < 2)
@@ -116,7 +116,7 @@ public class PlayerController : MonoBehaviour
         {
             isWallSliding = false;
         }
-    } 
+    }
 
     void HandleWallJump()
     {
@@ -170,7 +170,7 @@ public class PlayerController : MonoBehaviour
 
     void CheckGrounded()
     {
-        isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCeckSize, groundLayer);
+        isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCeckSize, 0, groundLayer);
         if (isGrounded)
         {
             jumpsRemaining = maxJumps;
@@ -179,7 +179,7 @@ public class PlayerController : MonoBehaviour
 
     void CheckWalled()
     {
-        isWalled = Physics2D.OverlapBox(wallCheck.position, wallCheckSize, wallLayer);
+        isWalled = Physics2D.OverlapBox(wallCheck.position, wallCheckSize, 0, wallLayer);
     }
 
     void CheckRunning()
@@ -200,7 +200,7 @@ public class PlayerController : MonoBehaviour
     {
         if (rb.linearVelocityY < -0.1f) // When falling
         {
-            targetGravity = fallingGravity; 
+            targetGravity = fallingGravity;
         }
         else if (rb.linearVelocityY > 0.1f) // When rising
         {
@@ -209,31 +209,6 @@ public class PlayerController : MonoBehaviour
         else // When grounded
         {
             targetGravity = normalGravity;
-        }
-    }
-
-    void Flip()
-    {
-        if (isFacingRight && rb.linearVelocityX < 0 || !isFacingRight && rb.linearVelocityX > 0) // If we're facing right but moving left or if we're facing left but moving right.
-        {
-            isFacingRight = !isFacingRight;
-            Vector3 ls = transform.localScale;
-            ls.x *= -1f;
-            transform.localScale = ls;
-        }
-    }
-
-    void HandleAnimations()
-    {
-        if (isRunning)
-        {
-            anim.SetBool("Running", true);
-            anim.SetBool("Idle", false);
-        }
-        else if (!isRunning)
-        {
-            anim.SetBool("Running", false);
-            anim.SetBool("Idle", true);
         }
     }
 

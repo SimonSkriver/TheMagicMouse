@@ -8,6 +8,8 @@ public class SimpleBounce : MonoBehaviour
     [SerializeField] private bool isPurified = false;
     [SerializeField] private bool startPurified = false;
 
+    [SerializeField] private float bounceGravity = 40f;
+
     // Til senere brug hvis vi har en animationer
     [SerializeField] private Animator animator;
     [SerializeField] private string purifyAnimName = "Purify";
@@ -45,23 +47,38 @@ public class SimpleBounce : MonoBehaviour
             MonoBehaviour PlayerController = other.GetComponent<PlayerController>();
             // 4. Hent Rigidbody for at tilføje Force
             Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
+            // 5. Hent PlayerAnimations for at sætte retning
+            PlayerAnimations playerAnim = other.GetComponent<PlayerAnimations>();
+
             if (PlayerController != null && rb != null)
             {
                 // Start hoppe sekvensen
-                StartCoroutine(PerformBounce(rb, PlayerController));
+                StartCoroutine(PerformBounce(rb, PlayerController, playerAnim));
             }
         }
     }
 
     // Coroutines gør så vi kan pause koden (vente i sekunder)
-    private IEnumerator PerformBounce(Rigidbody2D rb, MonoBehaviour PlayerController)
+    private IEnumerator PerformBounce(Rigidbody2D rb, MonoBehaviour PlayerController, PlayerAnimations playerAnim)
     {
         // Deaktiver spillerens script så det ikke overskriver vores Force (fordi lige nu overskriver PlayerControlleren vores Force hvis vi ikke holder en movement input nede)
         PlayerController.enabled = false;
         // Nulstil nuværende hastighed så hoppet er ensartet
         rb.linearVelocity = Vector2.zero;
+        // Reset gravity scale to ensure consistent bounce height (PlayerController might have set it high if falling)
+        rb.gravityScale = bounceGravity;
+        
+        // Calculate bounce direction
+        Vector2 bounceDir = transform.up;
+        
+        // Set facing direction if we have a significant horizontal component
+        if (playerAnim != null && Mathf.Abs(bounceDir.x) > 0.1f)
+        {
+            playerAnim.SetFacingDirection(bounceDir.x > 0 ? 1 : -1);
+        }
+
         // Tilføj Force opad (transform.up tillader os at rotere svampen)
-        rb.AddForce(transform.up * bounceForce, ForceMode2D.Impulse);
+        rb.AddForce(bounceDir * bounceForce, ForceMode2D.Impulse);
         // Afspil hoppe-animation hvis vi har en
         if (animator != null)
         {   

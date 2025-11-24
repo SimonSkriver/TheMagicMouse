@@ -49,7 +49,7 @@ public class PlayerPurify : MonoBehaviour
         if (manaOnPlayer.IsManaFull && bigCorruptionCollider != null)
         {
             Destroy(bigCorruptionCollider.gameObject);
-            manaOnPlayer.currentMana = 0; 
+            manaOnPlayer.UseAllMana(); 
         }
         else
         {
