@@ -13,8 +13,6 @@ public class PurifyOwl : MonoBehaviour
     public LayerMask smallCorruption;
     public LayerMask bigCorruption;
     public float corruptionCheckRadius;
-    [Header("Scene to load on purify")]
-    [SerializeField] string nextScene;
 
 
     void Awake()
@@ -24,8 +22,7 @@ public class PurifyOwl : MonoBehaviour
 
     void Start()
     {
-        //Debug line to set player 100 mana
-        //manaOnPlayer.currentMana = 100f;
+        
     }
 
     void Update()
@@ -52,8 +49,8 @@ public class PurifyOwl : MonoBehaviour
     {
         if (manaOnPlayer.IsManaFull && bigCorruptionCollider != null)
         {
-            SceneManager.LoadScene(nextScene, LoadSceneMode.Single);
-            manaOnPlayer.currentMana = 0; 
+            FindAnyObjectByType<SceneLoader>().LoadNextScene();
+            manaOnPlayer.currentMana = 0;
         }
         else
         {
