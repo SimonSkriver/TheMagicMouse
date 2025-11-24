@@ -8,13 +8,14 @@ public class PlayerAnimations : MonoBehaviour
     [SerializeField] private PlayerController playerController;
 
     [SerializeField] private Transform groundCheck;
-    [SerializeField] private float groundCheckRadius = 0.2f;
     [SerializeField] private LayerMask groundLayer;
 
     [SerializeField] private string jumpStartParam = "JumpStart";
     [SerializeField] private string jumpInAirParam = "IsInAir"; // Bool
     [SerializeField] private string jumpLandParam = "JumpLand";
     [SerializeField] private string doubleJumpParam = "DoubleJump";
+    [SerializeField] private string smallPurifyParam = "SmallPurify";
+    [SerializeField] private string bigPurifyParam = "BigPurify";
     [SerializeField] Vector2 groundCeckSize;
 
 
@@ -59,9 +60,16 @@ public class PlayerAnimations : MonoBehaviour
         moveInput = value.Get<Vector2>();
     }
 
+    public void OnSmallPurify(InputValue value)
+    {
+        if (value.isPressed)
+        {
+            anim.SetTrigger(smallPurifyParam);
+        }
+    }
+
     private void HandleFlip()
     {
-        // If PlayerController is disabled (e.g. during bounce), do not flip based on input
         if (playerController != null && !playerController.enabled) return;
 
         // Brug input til at bestemme retning for at undgå flickering
@@ -81,7 +89,6 @@ public class PlayerAnimations : MonoBehaviour
 
     public void SetFacingDirection(int direction)
     {
-        // direction: 1 for right, -1 for left
         if (direction > 0 && !isFacingRight)
         {
             Flip();
@@ -130,7 +137,7 @@ public class PlayerAnimations : MonoBehaviour
         }
     }
 
-    // Tegn cirklen i editoren så vi kan se den
+    // Tegn BOXEN i editoren så vi kan se den
     private void OnDrawGizmosSelected()
     {
         if (groundCheck != null)

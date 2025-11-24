@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
     [Header("Components")]
     public Rigidbody2D rb;
     public SpriteRenderer sr;
-    // public Animator anim; flyttet til animations script
+    // public Animator anim; 
 
     [Header("Audio")]
     public AudioSource jumpAudioSource;
@@ -64,11 +64,11 @@ public class PlayerController : MonoBehaviour
         ApplyVariableGravity();
         CheckGrounded();
         CheckRunning();
-        // Flip(); // Moved to PlayerAnimations
+        // Flip(); //flyttet til animations script
         CheckWalled();
         HandleWallJump();
         HandleCoyoteTime();
-        // HandleAnimations(); // Moved to PlayerAnimations
+        // HandleAnimations(); // flyttet til animations script
         HandleAudio();
     }
 
@@ -198,15 +198,15 @@ public class PlayerController : MonoBehaviour
 
     void ApplyVariableGravity()
     {
-        if (rb.linearVelocityY < -0.1f) // When falling
+        if (rb.linearVelocityY < -0.1f) 
         {
             targetGravity = fallingGravity;
         }
-        else if (rb.linearVelocityY > 0.1f) // When rising
+        else if (rb.linearVelocityY > 0.1f) 
         {
             targetGravity = jumpingGravity;
         }
-        else // When grounded
+        else 
         {
             targetGravity = normalGravity;
         }
@@ -227,7 +227,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmosSelected() // This is for debugging purposes. Draws a ring around the groundcheck GameObject
+    private void OnDrawGizmosSelected() 
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(groundCheck.position, groundCeckSize);

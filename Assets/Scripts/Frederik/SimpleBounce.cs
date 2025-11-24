@@ -65,13 +65,11 @@ public class SimpleBounce : MonoBehaviour
         PlayerController.enabled = false;
         // Nulstil nuværende hastighed så hoppet er ensartet
         rb.linearVelocity = Vector2.zero;
-        // Reset gravity scale to ensure consistent bounce height (PlayerController might have set it high if falling)
+
         rb.gravityScale = bounceGravity;
         
-        // Calculate bounce direction
         Vector2 bounceDir = transform.up;
         
-        // Set facing direction if we have a significant horizontal component
         if (playerAnim != null && Mathf.Abs(bounceDir.x) > 0.1f)
         {
             playerAnim.SetFacingDirection(bounceDir.x > 0 ? 1 : -1);

@@ -1,4 +1,3 @@
-// PlayerMana.cs
 using System;
 using UnityEngine;
 
@@ -9,26 +8,20 @@ public class PlayerMana : MonoBehaviour
     [SerializeField] private float maxMana = 100f;
     public float currentMana;
 
-    // C# event that other scripts can subscribe to. It fires whenever mana changes.
     public event Action<float, float> OnManaChanged;
 
-    // A public property to easily check if mana is full.
     public bool IsManaFull => currentMana >= maxMana;
 
     private void Start()
     {
-        // Player starts with zero mana.
         currentMana = 0;
     }
 
-    // Public method to add mana.
     public void AddMana(float amount)
     {
-        // Add the amount, ensuring it doesn't exceed the max.
         currentMana = Mathf.Min(currentMana + amount, maxMana);
         Debug.Log("Mana is now: " + currentMana);
 
-        // Fire the event, sending the current and max mana to all listeners.
         OnManaChanged?.Invoke(currentMana, maxMana);
     }
 
