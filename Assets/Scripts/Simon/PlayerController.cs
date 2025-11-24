@@ -8,12 +8,14 @@ public class PlayerController : MonoBehaviour
     public SpriteRenderer sr;
     // public Animator anim; 
 
+    /*
     [Header("Audio")]
     public AudioSource jumpAudioSource;
     public AudioSource runAudioSource;
     public AudioClip[] jumpClips;
     public AudioClip runClip;
     private bool runClipPlaying;
+    */
 
     [Header("Movement settings")]
     [SerializeField] float moveSpeed = 5f;
@@ -69,7 +71,7 @@ public class PlayerController : MonoBehaviour
         HandleWallJump();
         HandleCoyoteTime();
         // HandleAnimations(); // flyttet til animations script
-        HandleAudio();
+        //HandleAudio();
     }
 
     void FixedUpdate()
@@ -153,8 +155,10 @@ public class PlayerController : MonoBehaviour
             if (coyoteTimeCounter > 0 || jumpsRemaining > 0)
             {
                 jumpPressed = true;
+                /*
                 jumpAudioSource.clip = jumpClips[Random.Range(0, jumpClips.Length)];
                 jumpAudioSource.Play();
+                */
 
                 if (!isGrounded && coyoteTimeCounter <= 0)
                 {
@@ -212,6 +216,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /*
     void HandleAudio()
     {
         if (isRunning && !runClipPlaying)
@@ -226,6 +231,7 @@ public class PlayerController : MonoBehaviour
             runClipPlaying = false;
         }
     }
+    */
 
     private void OnDrawGizmosSelected() 
     {
