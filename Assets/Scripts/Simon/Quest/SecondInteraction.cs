@@ -2,25 +2,32 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 
-public class NPC : MonoBehaviour
-{
+public class SecondInteraction : MonoBehaviour
+{ 
     [Header ("Dialogue stuff")]
     public TextMeshProUGUI textDisplay;
+    public GameObject dialogueBox;
     public float typeSpeed = 0.2f;
     public string[] sentances;
     public GameObject continueButton;
+    public Canvas canvas;
     private int index;
 
-    [Header ("Other necesseties")]
-    //public GameObject Player;
+    [Header ("Lute necessities")]
     public GameObject lute;
     public LuteItem luteScript;
     public Sprite[] sprites;
     public SpriteRenderer sr;
 
-    void Start()
+    public Animator anim;
+    private PlayerMana manaOnPlayer;
+    private PlayerController pc;
+    private bool isTalking;
+
+    void Awake()
     {
-        StartCoroutine(Type());
+        pc = FindAnyObjectByType<PlayerController>();
+        manaOnPlayer = FindAnyObjectByType<PlayerMana>();
     }
 
     void Update()
@@ -29,8 +36,8 @@ public class NPC : MonoBehaviour
         {
             continueButton.SetActive(true);
         }
+        HandlePlayerControls();
     }
-
 
     IEnumerator Type()
     {
@@ -53,17 +60,34 @@ public class NPC : MonoBehaviour
         else // When the dialogue is over
         {
             textDisplay.text = "";
+            manaOnPlayer.currentMana = 100f;
+            anim.SetTrigger("BoxDisappear");
             continueButton.SetActive(false);
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
-    { 
+    {
         if (other.CompareTag("Player") && luteScript.playerHasLute)
         {
+            //dialogueBox.SetActive(true);
+            anim.SetTrigger("BoxAppear");
+            StartCoroutine(Type());
             Destroy(lute);
-            luteScript.playerHasLute = false;
             sr.sprite = sprites[1];
+            luteScript.playerHasLute = false;
         }
+    }
+
+    void HandlePlayerControls()
+    {
+        if (isTalking)
+        {
+            pc.enabled = false;
+        }
+        else
+        {
+            pc.enabled = true; 
+        } 
     }
 }

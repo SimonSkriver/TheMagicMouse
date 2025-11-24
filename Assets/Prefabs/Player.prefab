@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1781874908145886555}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4580810479823212561}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FIrePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 1093396037554794820}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.89, y: 2.83, z: 0}
+  m_LocalPosition: {x: -8.7, y: 2.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1428862935266512395}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CorruptionCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6150615613593946845}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,7 +144,8 @@ GameObject:
   - component: {fileID: 903998165848546456}
   - component: {fileID: 1120557057788547492}
   - component: {fileID: 7526010404938834752}
-  m_Layer: 0
+  - component: {fileID: 3640511019903462857}
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -222,7 +223,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 15.53, y: 19.297615}
+  m_Size: {x: 20.48, y: 20.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -242,7 +243,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   rb: {fileID: 7822954264791147308}
   sr: {fileID: 4823354142197390032}
-  anim: {fileID: -5042322237167197784}
   jumpAudioSource: {fileID: 903998165848546456}
   runAudioSource: {fileID: 1120557057788547492}
   jumpClips:
@@ -251,26 +251,26 @@ MonoBehaviour:
   runClip: {fileID: 8300000, guid: b79a9fac857a7ae42824f09ef8e638fc, type: 3}
   moveSpeed: 80
   jumpForce: 120
-  secondJumpForce: 60
+  secondJumpForce: 120
   jumpCutMultiplier: 0.2
   maxJumps: 2
   normalGravity: 50
   jumpingGravity: 40
   fallingGravity: 60
   wallSlideSpeed: 2
-  wallJumpPower: {x: 70, y: 140}
-  wallJumpLockDuration: 0.2
+  wallJumpPower: {x: 90, y: 130}
+  wallJumpLockDuration: 0.15
   coyoteTime: 0.2
   groundCheck: {fileID: 1781874908145886555}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
-  groundCeckSize: {x: 15, y: 2}
+    m_Bits: 192
+  groundCeckSize: {x: 8.43, y: 2}
   wallCheck: {fileID: 6150615613593946845}
   wallLayer:
     serializedVersion: 2
     m_Bits: 128
-  wallCheckSize: {x: 5, y: 20}
+  wallCheckSize: {x: 3.95, y: 17.8}
 --- !u!114 &8268663906928180552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,6 +283,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d379626560bd8242adbe33b8f2fa313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerPurify
+  anim: {fileID: -5042322237167197784}
+  bigPurifyParam: BigPurify
   corruptionCheck: {fileID: 1428862935266512395}
   smallCorruption:
     serializedVersion: 2
@@ -290,7 +292,7 @@ MonoBehaviour:
   bigCorruption:
     serializedVersion: 2
     m_Bits: 512
-  corruptionCheckRadius: 17.3
+  corruptionCheckRadius: 29.4
 --- !u!50 &7822954264791147308
 Rigidbody2D:
   serializedVersion: 5
@@ -315,8 +317,8 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &1983360995175850921
 BoxCollider2D:
@@ -357,7 +359,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 20.48, y: 20.48}
-    newSize: {x: 15.53, y: 19.297615}
+    newSize: {x: 20.48, y: 20.48}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -677,3 +679,29 @@ MonoBehaviour:
     - rid: 1873303316215627849
       type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
       data: 
+--- !u!114 &3640511019903462857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5571484971666131518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c114e93f1a63c6d438de8f44735c59b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimations
+  rb: {fileID: 7822954264791147308}
+  anim: {fileID: -5042322237167197784}
+  playerController: {fileID: 3950323296724717037}
+  groundCheck: {fileID: 1781874908145886555}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 192
+  jumpStartParam: JumpStart
+  jumpInAirParam: IsInAir
+  jumpLandParam: JumpLand
+  doubleJumpParam: DoubleJump
+  smallPurifyParam: SmallPurify
+  bigPurifyParam: BigPurify
+  groundCeckSize: {x: 8.43, y: 2}
