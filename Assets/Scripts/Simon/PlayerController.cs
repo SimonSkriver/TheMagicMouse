@@ -93,17 +93,25 @@ public class PlayerController : MonoBehaviour
 
     void HandleJumping()
     {
-        if (jumpPressed && jumpsRemaining >= 2)
+        if (jumpPressed)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
-            jumpPressed = false;
-            jumpsRemaining--;
-        }
+            // Ground Jump
+            if (coyoteTimeCounter > 0)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
+                jumpsRemaining = maxJumps - 1;
+                Debug.Log("Ground Jump executed");
+            }
+            // Air Jump
+            else if (jumpsRemaining > 0)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocityX, secondJumpForce);
+                jumpsRemaining--;
+                Debug.Log($"Air Jump executed. Jumps remaining: {jumpsRemaining}");
+            }
 
-        else if (jumpPressed && jumpsRemaining < 2)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocityX, secondJumpForce);
             jumpPressed = false;
+            coyoteTimeCounter = 0;
         }
     }
 
@@ -124,10 +132,19 @@ public class PlayerController : MonoBehaviour
     {
         if (Keyboard.current.spaceKey.wasPressedThisFrame && isWallSliding)
         {
-            Debug.Log("Walljump called");
-            wallJumpDirection = isFacingRight ? -1 : 1;
-            rb.linearVelocity = new Vector2(wallJumpDirection * wallJumpPower.x, wallJumpPower.y);
+            // Use localScale to determine facing direction since isFacingRight might be stale
+            // If scale.x is positive, we are facing right, so jump direction is left (-1)
+            // If scale.x is negative, we are facing left, so jump direction is right (1)
+            wallJumpDirection = transform.localScale.x > 0 ? -1 : 1;
+            
+            Vector2 force = new Vector2(wallJumpDirection * wallJumpPower.x, wallJumpPower.y);
+            rb.linearVelocity = force;
+            Debug.Log($"Walljump called. Direction: {wallJumpDirection}, Force: {force}");
+
             wallJumpLockTimer = wallJumpLockDuration;
+            
+            // Consume the jump input so HandleJumping doesn't fire an air jump immediately after
+            jumpPressed = false; 
         }
     }
 
@@ -159,11 +176,6 @@ public class PlayerController : MonoBehaviour
                 jumpAudioSource.clip = jumpClips[Random.Range(0, jumpClips.Length)];
                 jumpAudioSource.Play();
                 */
-
-                if (!isGrounded && coyoteTimeCounter <= 0)
-                {
-                    jumpsRemaining--;
-                }
             }
         }
         else // When jump button is released
