@@ -17,19 +17,11 @@ public class HUDController : MonoBehaviour
     private void OnEnable()
     {
         var uiDoc = GetComponent<UIDocument>();
-        if (uiDoc == null) return;
 
         var root = uiDoc.rootVisualElement;
 
         // Setup Mana
         manaBarFill = root.Q<VisualElement>("mana-bar-fill");
-
-        // Setup Lute Icon (Hide it by default)
-        luteIcon = root.Q<VisualElement>(luteIconName);
-        if (luteIcon != null)
-        {
-            luteIcon.style.display = DisplayStyle.None; // Start hidden
-        }
 
         if (playerMana != null)
         {
@@ -48,7 +40,6 @@ public class HUDController : MonoBehaviour
 
     private void UpdateManaBar(float currentMana, float maxMana)
     {
-        if (manaBarFill == null || maxMana <= 0) return;
         float percent = currentMana / maxMana;
         manaBarFill.style.height = Length.Percent(percent * 100);
     }

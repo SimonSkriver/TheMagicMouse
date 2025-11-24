@@ -3,21 +3,22 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header ("Components")]
+    [Header("Components")]
     public Rigidbody2D rb;
-    public SpriteRenderer sr; 
-    public Animator anim;
+    public SpriteRenderer sr;
+    // public Animator anim; 
 
-    [Header ("Audio")]
+    [Header("Audio")]
     public AudioSource jumpAudioSource;
     public AudioSource runAudioSource;
     public AudioClip[] jumpClips;
     public AudioClip runClip;
     private bool runClipPlaying;
 
-    [Header ("Movement settings")]
+    [Header("Movement settings")]
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float jumpForce = 5f;
+    [SerializeField] float secondJumpForce = 60f;
     [SerializeField] float jumpCutMultiplier = 0.5f; // How much jump velocity is removed when button is released
     [SerializeField] int maxJumps = 2;
     [SerializeField] float normalGravity;
@@ -31,29 +32,27 @@ public class PlayerController : MonoBehaviour
     private float wallJumpLockTimer;
     private Vector2 moveInput;
     private bool jumpPressed;
-    private bool jumpReleased;
     private int jumpsRemaining;
     private bool isWallSliding;
     private bool isRunning;
     private bool isStanding;
     private float wallJumpDirection;
-
-    
-    [Header ("Ground check settings")]
-    public Transform groundCheck;
-    public LayerMask groundLayer;
-    public float groundCheckRadius;
     private bool isGrounded;
 
-    [Header ("Wall check settings")]
+    [Header("Ground check settings")]
+    public Transform groundCheck;
+    public LayerMask groundLayer;
+    public Vector2 groundCeckSize;
+
+    [Header("Wall check settings")]
     public Transform wallCheck;
     public LayerMask wallLayer;
-    public float wallCheckRadius;
+    public Vector2 wallCheckSize;
     private bool isWalled;
-    
+
     private float targetGravity;
     private bool isFacingRight = true;
-    
+
 
     void Start()
     {
@@ -65,11 +64,11 @@ public class PlayerController : MonoBehaviour
         ApplyVariableGravity();
         CheckGrounded();
         CheckRunning();
-        Flip();
+        // Flip(); //flyttet til animations script
         CheckWalled();
         HandleWallJump();
         HandleCoyoteTime();
-        HandleAnimations();
+        // HandleAnimations(); // flyttet til animations script
         HandleAudio();
     }
 
@@ -92,20 +91,17 @@ public class PlayerController : MonoBehaviour
 
     void HandleJumping()
     {
-        if (jumpPressed)
+        if (jumpPressed && jumpsRemaining >= 2)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
             jumpPressed = false;
-            jumpReleased = false;
-            jumpsRemaining --; 
+            jumpsRemaining--;
         }
-        if (jumpReleased)
+
+        else if (jumpPressed && jumpsRemaining < 2)
         {
-            if (rb.linearVelocityY > 0f)
-            {
-                rb.linearVelocity = new Vector2(rb.linearVelocityX, rb.linearVelocityY * jumpCutMultiplier);
-            }
-            jumpReleased = false;
+            rb.linearVelocity = new Vector2(rb.linearVelocityX, secondJumpForce);
+            jumpPressed = false;
         }
     }
 
@@ -120,7 +116,7 @@ public class PlayerController : MonoBehaviour
         {
             isWallSliding = false;
         }
-    } 
+    }
 
     void HandleWallJump()
     {
@@ -168,14 +164,13 @@ public class PlayerController : MonoBehaviour
         }
         else // When jump button is released
         {
-            jumpReleased = true;
             coyoteTimeCounter = 0;
         }
     }
 
     void CheckGrounded()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        isGrounded = Physics2D.OverlapBox(groundCheck.position, groundCeckSize, 0, groundLayer);
         if (isGrounded)
         {
             jumpsRemaining = maxJumps;
@@ -184,7 +179,7 @@ public class PlayerController : MonoBehaviour
 
     void CheckWalled()
     {
-        isWalled = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, wallLayer);
+        isWalled = Physics2D.OverlapBox(wallCheck.position, wallCheckSize, 0, wallLayer);
     }
 
     void CheckRunning()
@@ -203,42 +198,17 @@ public class PlayerController : MonoBehaviour
 
     void ApplyVariableGravity()
     {
-        if (rb.linearVelocityY < -0.1f) // When falling
+        if (rb.linearVelocityY < -0.1f) 
         {
-            targetGravity = fallingGravity; 
+            targetGravity = fallingGravity;
         }
-        else if (rb.linearVelocityY > 0.1f) // When rising
+        else if (rb.linearVelocityY > 0.1f) 
         {
             targetGravity = jumpingGravity;
         }
-        else // When grounded
+        else 
         {
             targetGravity = normalGravity;
-        }
-    }
-
-    void Flip()
-    {
-        if (isFacingRight && rb.linearVelocityX < 0 || !isFacingRight && rb.linearVelocityX > 0) // If we're facing right but moving left or if we're facing left but moving right.
-        {
-            isFacingRight = !isFacingRight;
-            Vector3 ls = transform.localScale;
-            ls.x *= -1f;
-            transform.localScale = ls;
-        }
-    }
-
-    void HandleAnimations()
-    {
-        if (isRunning)
-        {
-            anim.SetBool("Running", true);
-            anim.SetBool("Idle", false);
-        }
-        else if (!isRunning)
-        {
-            anim.SetBool("Running", false);
-            anim.SetBool("Idle", true);
         }
     }
 
@@ -257,10 +227,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmosSelected() // This is for debugging purposes. Draws a ring around the groundcheck GameObject
+    private void OnDrawGizmosSelected() 
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
-        Gizmos.DrawWireSphere(wallCheck.position, wallCheckRadius);
+        Gizmos.DrawWireCube(groundCheck.position, groundCeckSize);
+        Gizmos.DrawWireCube(wallCheck.position, wallCheckSize);
     }
 }

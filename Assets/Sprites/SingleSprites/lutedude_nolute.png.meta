@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: b57eb228b77a9e34abab27605021453b
+guid: 1d0185a4f0f810b449eb2eb7df5fb0c7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7722264350615845429
-    second: FALLJUMP_0
+      213: -6839038629787782482
+    second: lutedude_nolute_0
   - first:
-      213: 7404338755424984011
-    second: FALLJUMP_1
-  - first:
-      213: 1731372530910616478
-    second: FALLJUMP_2
+      213: 3896462360334659846
+    second: lutedude_nolute_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -78,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -106,67 +103,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FALLJUMP_0
+      name: lutedude_nolute_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2048
-        height: 2048
+        x: 1003
+        y: 24
+        width: 1110
+        height: 2040
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc541e7cc7105d490800000000000000
-      internalID: -7722264350615845429
+      spriteID: ea2335ad99ad611a0800000000000000
+      internalID: -6839038629787782482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FALLJUMP_1
+      name: lutedude_nolute_1
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 0
-        width: 2048
-        height: 2048
+        x: 2107
+        y: 977
+        width: 12
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bcb93c14ede71c660800000000000000
-      internalID: 7404338755424984011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FALLJUMP_2
-      rect:
-        serializedVersion: 2
-        x: 4096
-        y: 0
-        width: 2048
-        height: 2048
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e9bdbc6c422170810800000000000000
-      internalID: 1731372530910616478
+      spriteID: 6017d645fd3031630800000000000000
+      internalID: 3896462360334659846
       vertices: []
       indices: 
       edges: []
@@ -175,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5d9cd2117233574429d9770add492704
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -183,13 +158,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":2048.0,"y":2048.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      FALLJUMP_0: -7722264350615845429
-      FALLJUMP_1: 7404338755424984011
-      FALLJUMP_2: 1731372530910616478
+      lutedude_nolute_0: -6839038629787782482
+      lutedude_nolute_1: 3896462360334659846
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -214,8 +214,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 1715805103
-  m_SortingLayer: -2
+  m_SortingLayerID: 1693626855
+  m_SortingLayer: 4
   m_SortingOrder: 17
   m_Sprite: {fileID: 8584986706017283902, guid: 557d9ce2c332e4d448378603ea59df5b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -249,27 +249,28 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ba969af7ab319eb40837f23643b6ff1d, type: 3}
   - {fileID: 8300000, guid: 4937b3e595447cf4baabb0373df3abdf, type: 3}
   runClip: {fileID: 8300000, guid: b79a9fac857a7ae42824f09ef8e638fc, type: 3}
-  moveSpeed: 70
-  jumpForce: 110
+  moveSpeed: 80
+  jumpForce: 120
+  secondJumpForce: 60
   jumpCutMultiplier: 0.2
   maxJumps: 2
   normalGravity: 50
   jumpingGravity: 40
-  fallingGravity: 50
+  fallingGravity: 60
   wallSlideSpeed: 2
-  wallJumpPower: {x: 5, y: 18}
+  wallJumpPower: {x: 70, y: 140}
   wallJumpLockDuration: 0.2
   coyoteTime: 0.2
   groundCheck: {fileID: 1781874908145886555}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  groundCheckRadius: 1.5
+  groundCeckSize: {x: 15, y: 2}
   wallCheck: {fileID: 6150615613593946845}
   wallLayer:
     serializedVersion: 2
     m_Bits: 128
-  wallCheckRadius: 1.5
+  wallCheckSize: {x: 5, y: 20}
 --- !u!114 &8268663906928180552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,7 +644,7 @@ MonoBehaviour:
   m_CastsShadows: 1
   m_SelfShadows: 0
   m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 00000000efa7125f8db5c605af1b4566b573e24a
+  m_ApplyToSortingLayers: 33e8e2ebefc9ec072fd7c8f9af1b4566000000008db5c605e7b1f264efa7125fb573e24a
   m_ShapePath:
   - {x: 10.24, y: -10.24, z: 0}
   - {x: 10.24, y: 10.24, z: 0}
@@ -658,15 +659,15 @@ MonoBehaviour:
   m_ShadowMesh:
     m_Mesh: {fileID: 0}
     m_LocalBounds:
-      m_Center: {x: -1.5499954, y: -0.57183075, z: 0}
-      m_Extent: {x: 7.8399887, y: 8.7136, z: 0}
+      m_Center: {x: -1.5499954, y: -0.29000092, z: 0}
+      m_Extent: {x: 8.389992, y: 9.549995, z: 0}
     m_EdgeProcessing: 1
-    m_TrimEdge: 0.85
+    m_TrimEdge: 0.3
     m_FlipX: 0
     m_FlipY: 0
     m_InitialTrim: 0
   m_CastingOption: 2
-  m_PreviousTrimEdge: 0.85
+  m_PreviousTrimEdge: 0.3
   m_PreviousEdgeProcessing: 1
   m_PreviousShadowCastingSource: 2
   m_PreviousShadowShape2DSource: {fileID: 4823354142197390032}

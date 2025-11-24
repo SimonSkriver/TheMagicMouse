@@ -103,10 +103,10 @@ TextureImporter:
       name: vine_grow_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 778
-        width: 1920
-        height: 142
+        x: 24
+        y: 792
+        width: 1863
+        height: 114
       alignment: 9
       pivot: {x: 0.97949857, y: 0.50667816}
       border: {x: 0, y: 0, z: 0, w: 0}

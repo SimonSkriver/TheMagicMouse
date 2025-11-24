@@ -1,0 +1,675 @@
+fileFormatVersion: 2
+guid: 52979f86c3c73714691c8f338b439fb4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8551023364876865592
+    second: BigPurify_0
+  - first:
+      213: 7077743722645079822
+    second: BigPurify_1
+  - first:
+      213: -2269433056384616140
+    second: BigPurify_2
+  - first:
+      213: -1460313459092443377
+    second: BigPurify_3
+  - first:
+      213: -4740782290955201100
+    second: BigPurify_4
+  - first:
+      213: 2697846209660207476
+    second: BigPurify_5
+  - first:
+      213: -5923763989629872423
+    second: BigPurify_6
+  - first:
+      213: -5501195206499337897
+    second: BigPurify_7
+  - first:
+      213: -4143108792812637121
+    second: BigPurify_8
+  - first:
+      213: 6733488806903671217
+    second: BigPurify_9
+  - first:
+      213: 1988735722669618320
+    second: BigPurify_10
+  - first:
+      213: 2956387318003093385
+    second: BigPurify_11
+  - first:
+      213: 6110858962923093781
+    second: BigPurify_12
+  - first:
+      213: -1528978959912464777
+    second: BigPurify_13
+  - first:
+      213: 4704450166293830475
+    second: BigPurify_14
+  - first:
+      213: -6693615250745687312
+    second: BigPurify_15
+  - first:
+      213: -293022459892296593
+    second: BigPurify_16
+  - first:
+      213: 2706034496577156306
+    second: BigPurify_17
+  - first:
+      213: -2860445835880247155
+    second: BigPurify_18
+  - first:
+      213: 3841088215267197568
+    second: BigPurify_19
+  - first:
+      213: -5404633486759022268
+    second: BigPurify_20
+  - first:
+      213: 336874247269064651
+    second: BigPurify_21
+  - first:
+      213: -4362715728132123092
+    second: BigPurify_22
+  - first:
+      213: -7386881501501607342
+    second: BigPurify_23
+  - first:
+      213: 244801153390619221
+    second: BigPurify_24
+  - first:
+      213: -5968806625796375331
+    second: BigPurify_25
+  - first:
+      213: 7309105159710932908
+    second: BigPurify_26
+  - first:
+      213: -171769428063569017
+    second: BigPurify_27
+  - first:
+      213: 2779663503813347312
+    second: BigPurify_28
+  - first:
+      213: 1337202440374668973
+    second: BigPurify_29
+  - first:
+      213: -8432894107118749469
+    second: BigPurify_30
+  - first:
+      213: -7823948051465496247
+    second: BigPurify_31
+  - first:
+      213: 1468772905274651637
+    second: BigPurify_32
+  - first:
+      213: 2666194571552912833
+    second: BigPurify_33
+  - first:
+      213: -6876953397863312902
+    second: BigPurify_34
+  - first:
+      213: 3197994831163572332
+    second: BigPurify_35
+  - first:
+      213: 6363001371960830030
+    second: BigPurify_36
+  - first:
+      213: 8034032471200096711
+    second: BigPurify_37
+  - first:
+      213: 3229712989734809360
+    second: BigPurify_38
+  - first:
+      213: -7053686922067131584
+    second: BigPurify_39
+  - first:
+      213: -2223956982198484808
+    second: BigPurify_40
+  - first:
+      213: 7362306062736969268
+    second: BigPurify_41
+  - first:
+      213: 7699136384035421787
+    second: BigPurify_42
+  - first:
+      213: -3278534106914938780
+    second: BigPurify_43
+  - first:
+      213: -7946348744168402900
+    second: BigPurify_44
+  - first:
+      213: -7380314432038822892
+    second: BigPurify_45
+  - first:
+      213: 6174950140493947169
+    second: BigPurify_46
+  - first:
+      213: 5102955630467555567
+    second: BigPurify_47
+  - first:
+      213: 3614579101538669833
+    second: BigPurify_48
+  - first:
+      213: 6017057657740550663
+    second: BigPurify_49
+  - first:
+      213: 8313527690007215653
+    second: BigPurify_50
+  - first:
+      213: -6620475550062074874
+    second: BigPurify_51
+  - first:
+      213: 6542650355350561527
+    second: BigPurify_52
+  - first:
+      213: -7329026673595608723
+    second: BigPurify_53
+  - first:
+      213: 6177866033293145335
+    second: BigPurify_54
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 35
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BigPurify_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 963
+        height: 964
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8301d81f1765ba670800000000000000
+      internalID: 8551023364876865592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPurify_1
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 0
+        width: 963
+        height: 964
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e07c28f8a62393260800000000000000
+      internalID: 7077743722645079822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPurify_2
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 0
+        width: 963
+        height: 964
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4397aa0c8aa5180e0800000000000000
+      internalID: -2269433056384616140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPurify_3
+      rect:
+        serializedVersion: 2
+        x: 2889
+        y: 0
+        width: 963
+        height: 964
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0fa21265acebbbe0800000000000000
+      internalID: -1460313459092443377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPurify_4
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 0
+        width: 963
+        height: 964
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b51726cf9b553eb0800000000000000
+      internalID: -4740782290955201100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPurify_5
+      rect:
+        serializedVersion: 2
+        x: 4815
+        y: 0
+        width: 963
+        height: 964
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4714e6975dca07520800000000000000
+      internalID: 2697846209660207476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPurify_6
+      rect:
+        serializedVersion: 2
+        x: 5778
+        y: 0
+        width: 963
+        height: 964
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d65cd079009acda0800000000000000
+      internalID: -5923763989629872423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPurify_7
+      rect:
+        serializedVersion: 2
+        x: 6741
+        y: 0
+        width: 963
+        height: 964
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75976843b14d7a3b0800000000000000
+      internalID: -5501195206499337897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPurify_8
+      rect:
+        serializedVersion: 2
+        x: 7704
+        y: 0
+        width: 963
+        height: 964
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f34fa9a0188b086c0800000000000000
+      internalID: -4143108792812637121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPurify_9
+      rect:
+        serializedVersion: 2
+        x: 8667
+        y: 0
+        width: 963
+        height: 964
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b9ef82f468227d50800000000000000
+      internalID: 6733488806903671217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPurify_10
+      rect:
+        serializedVersion: 2
+        x: 9630
+        y: 0
+        width: 963
+        height: 964
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0943add5a98699b10800000000000000
+      internalID: 1988735722669618320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPurify_11
+      rect:
+        serializedVersion: 2
+        x: 10593
+        y: 0
+        width: 963
+        height: 964
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f4b042a92370920800000000000000
+      internalID: 2956387318003093385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPurify_12
+      rect:
+        serializedVersion: 2
+        x: 11556
+        y: 0
+        width: 963
+        height: 964
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ffa8d99d12ec450800000000000000
+      internalID: 6110858962923093781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPurify_13
+      rect:
+        serializedVersion: 2
+        x: 12519
+        y: 0
+        width: 963
+        height: 964
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e0f51acb9f7cae0800000000000000
+      internalID: -1528978959912464777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPurify_14
+      rect:
+        serializedVersion: 2
+        x: 13482
+        y: 0
+        width: 963
+        height: 964
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b98714080994140800000000000000
+      internalID: 4704450166293830475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPurify_15
+      rect:
+        serializedVersion: 2
+        x: 14445
+        y: 0
+        width: 963
+        height: 964
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f28a2cc4608b13a0800000000000000
+      internalID: -6693615250745687312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigPurify_16
+      rect:
+        serializedVersion: 2
+        x: 15408
+        y: 0
+        width: 963
+        height: 964
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6498ee00a9feebf0800000000000000
+      internalID: -293022459892296593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: aafd6ce54312e6640b2f5a60a54175d4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":17.0,"y":1.0},"gridSpriteSize":{"x":963.0,"y":964.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.4000000059604645},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      BigPurify_0: 8551023364876865592
+      BigPurify_1: 7077743722645079822
+      BigPurify_10: 1988735722669618320
+      BigPurify_11: 2956387318003093385
+      BigPurify_12: 6110858962923093781
+      BigPurify_13: -1528978959912464777
+      BigPurify_14: 4704450166293830475
+      BigPurify_15: -6693615250745687312
+      BigPurify_16: -293022459892296593
+      BigPurify_2: -2269433056384616140
+      BigPurify_3: -1460313459092443377
+      BigPurify_4: -4740782290955201100
+      BigPurify_5: 2697846209660207476
+      BigPurify_6: -5923763989629872423
+      BigPurify_7: -5501195206499337897
+      BigPurify_8: -4143108792812637121
+      BigPurify_9: 6733488806903671217
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
