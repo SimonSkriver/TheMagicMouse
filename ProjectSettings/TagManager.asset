@@ -58,6 +58,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Grass
+    uniqueID: 594351205
+    locked: 0
   - name: Middleground
     uniqueID: 497076893
     locked: 0
