@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.InputSystem;
 
 public class FirstInteraction : MonoBehaviour
 {
@@ -14,13 +15,12 @@ public class FirstInteraction : MonoBehaviour
     private int index;
     public bool hasMet = false;
 
-    private PlayerController pc;
+    public InputActionAsset playerControls;
     public Animator anim;
     private bool isTalking;
 
     void Awake()
     {
-        pc = FindAnyObjectByType<PlayerController>();
     }
 
     void Update()
@@ -53,7 +53,6 @@ public class FirstInteraction : MonoBehaviour
         else // When the dialogue is over
         {
             textDisplay.text = "";
-            //dialogueBox.SetActive(false);
             anim.SetTrigger("BoxDisappear");
             continueButton.SetActive(false);
             isTalking = false;
@@ -66,7 +65,6 @@ public class FirstInteraction : MonoBehaviour
         if (other.CompareTag("Player") && !hasMet)
         {   
             isTalking = true;
-            //dialogueBox.SetActive(true);
             anim.SetTrigger("BoxAppear");
             StartCoroutine(Type());
             hasMet = true;
@@ -77,11 +75,11 @@ public class FirstInteraction : MonoBehaviour
     {
         if (isTalking)
         {
-            pc.enabled = false;
+            playerControls.Disable();
         }
         else
         {
-            pc.enabled = true; 
+            playerControls.Enable(); 
         }
     }
 }
