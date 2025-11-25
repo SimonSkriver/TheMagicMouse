@@ -1,12 +1,13 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PurifyOwl : MonoBehaviour
 {
     private PlayerMana manaOnPlayer;
     private Collider2D smallCorruptionCollider;
     private Collider2D bigCorruptionCollider;
-    
+    [SerializeField] private Animator anim; //Tif�ljje animator til at spille animationer
+    [SerializeField] private string bigPurifyParam = "BigPurify"; //Navn p� parameter i animator til big purify
+
 
     [Header ("Corruption check settings")]
     public Transform corruptionCheck;
@@ -50,7 +51,8 @@ public class PurifyOwl : MonoBehaviour
         if (manaOnPlayer.IsManaFull && bigCorruptionCollider != null)
         {
             FindAnyObjectByType<SceneLoader>().LoadNextScene();
-            manaOnPlayer.currentMana = 0;
+            manaOnPlayer.UseAllMana(); 
+            anim.SetTrigger(bigPurifyParam);
         }
         else
         {
@@ -64,3 +66,6 @@ public class PurifyOwl : MonoBehaviour
         Gizmos.DrawWireSphere(corruptionCheck.position, corruptionCheckRadius);
     }
 }
+
+
+

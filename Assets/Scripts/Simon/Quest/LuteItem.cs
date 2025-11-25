@@ -5,6 +5,8 @@ public class LuteItem : MonoBehaviour
     public GameObject player;
     public bool playerHasLute;
     public Animator anim;
+    public AudioSource audioSource;
+    public AudioClip lutePickUp;
 
     void Update()
     {
@@ -20,6 +22,7 @@ public class LuteItem : MonoBehaviour
         {
             playerHasLute = true;
             anim.SetTrigger("BranchBreak");
+            audioSource.PlayOneShot(lutePickUp);
         }
     }
 }

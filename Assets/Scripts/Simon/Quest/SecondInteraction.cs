@@ -19,12 +19,15 @@ public class SecondInteraction : MonoBehaviour
     public LuteItem luteScript;
     public Sprite[] sprites;
     public SpriteRenderer sr;
+    public AudioClip luteShred;
+    public AudioSource audioSource;
 
     public Animator anim;
     public InputActionAsset inputAsset;
     private PlayerMana manaOnPlayer;
     private PlayerController pc;
     private bool isTalking;
+
 
     void Awake()
     {
@@ -62,7 +65,7 @@ public class SecondInteraction : MonoBehaviour
         else // When the dialogue is over
         {
             textDisplay.text = "";
-            manaOnPlayer.currentMana = 100f;
+            manaOnPlayer.FullMana();
             isTalking = false;
             anim.SetTrigger("BoxDisappear");
             continueButton.SetActive(false);
@@ -80,6 +83,7 @@ public class SecondInteraction : MonoBehaviour
             isTalking = true;
             sr.sprite = sprites[1];
             luteScript.playerHasLute = false;
+            audioSource.PlayOneShot(luteShred);
         }
     }
 
