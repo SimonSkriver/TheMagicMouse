@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.InputSystem;
 
 public class SecondInteraction : MonoBehaviour
 { 
@@ -20,6 +21,7 @@ public class SecondInteraction : MonoBehaviour
     public SpriteRenderer sr;
 
     public Animator anim;
+    public InputActionAsset inputAsset;
     private PlayerMana manaOnPlayer;
     private PlayerController pc;
     private bool isTalking;
@@ -61,6 +63,7 @@ public class SecondInteraction : MonoBehaviour
         {
             textDisplay.text = "";
             manaOnPlayer.currentMana = 100f;
+            isTalking = false;
             anim.SetTrigger("BoxDisappear");
             continueButton.SetActive(false);
         }
@@ -74,6 +77,7 @@ public class SecondInteraction : MonoBehaviour
             anim.SetTrigger("BoxAppear");
             StartCoroutine(Type());
             Destroy(lute);
+            isTalking = true;
             sr.sprite = sprites[1];
             luteScript.playerHasLute = false;
         }
@@ -83,11 +87,11 @@ public class SecondInteraction : MonoBehaviour
     {
         if (isTalking)
         {
-            pc.enabled = false;
+            inputAsset.Disable();
         }
         else
         {
-            pc.enabled = true; 
+            inputAsset.Enable();
         } 
     }
 }

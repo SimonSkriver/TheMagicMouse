@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float jumpForce = 5f;
     [SerializeField] float secondJumpForce = 60f;
     [SerializeField] float jumpCutMultiplier = 0.5f; // How much jump velocity is removed when button is released
-    [SerializeField] int maxJumps = 2;
+    [SerializeField] public int maxJumps = 2;
     [SerializeField] float normalGravity;
     [SerializeField] float jumpingGravity;
     [SerializeField] float fallingGravity;
