@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 232172640699773024}
   - component: {fileID: 8782087493891181750}
   - component: {fileID: 2204899878254187492}
+  - component: {fileID: 2642315874165210083}
   m_Layer: 0
   m_Name: OwlClaw
   m_TagString: Untagged
@@ -80,7 +81,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1256354741
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 53
   m_Sprite: {fileID: -5759981259075918650, guid: 7b8696faf4ec6924aa957cb096cd6ebe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -173,3 +174,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6854be2896520ec468926d82afda6b52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClawLogic
+--- !u!114 &2642315874165210083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5891335096720034532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e04b4452e63f70a4aa16724a5a1cdab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SFXHandler
+  soundEffects:
+  - audioClip: {fileID: 0}
+    animatorEventTag: ClawSwipe
