@@ -132,9 +132,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Keyboard.current.spaceKey.wasPressedThisFrame && isWallSliding)
         {
-            // Use localScale to determine facing direction since isFacingRight might be stale
-            // If scale.x is positive, we are facing right, so jump direction is left (-1)
-            // If scale.x is negative, we are facing left, so jump direction is right (1)
+       
             wallJumpDirection = transform.localScale.x > 0 ? -1 : 1;
             
             Vector2 force = new Vector2(wallJumpDirection * wallJumpPower.x, wallJumpPower.y);
