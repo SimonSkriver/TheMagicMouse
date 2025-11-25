@@ -4,6 +4,7 @@ public class LuteItem : MonoBehaviour
 {
     public GameObject player;
     public bool playerHasLute;
+    public Animator anim;
 
     void Update()
     {
@@ -18,6 +19,7 @@ public class LuteItem : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerHasLute = true;
+            anim.SetTrigger("BranchBreak");
         }
     }
 }
