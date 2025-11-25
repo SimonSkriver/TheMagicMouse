@@ -8,7 +8,8 @@ public class ManaScatter : MonoBehaviour
     [SerializeField] protected Vector2 areaSize = new Vector2(250f, 150f);
     [SerializeField] protected AnimationCurve verticalDensity;
     [SerializeField] protected float manaDespawnTime = 5;
-
+    [SerializeField] protected AudioClip manaSpawnSound;
+    [SerializeField] protected AudioSource audioSource;
     
     void Start()
     {
@@ -18,6 +19,7 @@ public class ManaScatter : MonoBehaviour
     public void ScatterMana()
     {
         int manaSpawned = 0;
+        audioSource.PlayOneShot(manaSpawnSound);
 
         while (manaSpawned < manaCount)
         {
