@@ -45,16 +45,17 @@ public class OnGameStart : MonoBehaviour
         Destroy(Button);
         Debug.Log("You have pressed the button");
     }
+
     void PlayerCanMove()
     {
         pc.enabled = true;
     }
+    
     void EnablePlayerControls()
     {
      if (buttonHasBeenPressed == true) //if statements går altid ud fra at men checker om ens boolean er true unless man checker at den er = false
         {
-        Invoke("PlayerCanMove", secondsAfterButtonPress);
-        //Debug.Log("Player Controllers enabled.");
+            Invoke("PlayerCanMove", secondsAfterButtonPress);
         }
     }
 }

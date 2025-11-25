@@ -2,14 +2,15 @@ using UnityEngine;
 
 public class LuteItem : MonoBehaviour
 {
-    public GameObject Player;
+    public GameObject player;
     public bool playerHasLute;
+    public Animator anim;
 
     void Update()
     {
         if (playerHasLute)
         {
-            transform.position = Player.transform.position;
+            transform.position = player.transform.position;
         }
     }
 
@@ -18,6 +19,7 @@ public class LuteItem : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerHasLute = true;
+            anim.SetTrigger("BranchBreak");
         }
     }
 }

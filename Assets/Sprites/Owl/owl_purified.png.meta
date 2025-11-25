@@ -119,9 +119,9 @@ TextureImporter:
       name: owl_purified_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 2160
+        width: 2159
         height: 3840
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -141,9 +141,9 @@ TextureImporter:
       name: owl_purified_1
       rect:
         serializedVersion: 2
-        x: 2160
+        x: 2161
         y: 0
-        width: 2160
+        width: 2159
         height: 3840
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
