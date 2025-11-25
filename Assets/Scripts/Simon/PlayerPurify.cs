@@ -6,8 +6,8 @@ public class PlayerPurify : MonoBehaviour
     private PlayerMana manaOnPlayer;
     private Collider2D smallCorruptionCollider;
     private Collider2D bigCorruptionCollider;
-    [SerializeField] private Animator anim; //Tiføljje animator til at spille animationer
-    [SerializeField] private string bigPurifyParam = "BigPurify"; //Navn på parameter i animator til big purify
+    [SerializeField] private Animator anim; //Tifï¿½ljje animator til at spille animationer
+    [SerializeField] private string bigPurifyParam = "BigPurify"; //Navn pï¿½ parameter i animator til big purify
 
 
     [Header ("Corruption check settings")]
@@ -54,7 +54,6 @@ public class PlayerPurify : MonoBehaviour
             Destroy(bigCorruptionCollider.gameObject);
             manaOnPlayer.UseAllMana(); 
             anim.SetTrigger(bigPurifyParam);
-
         }
         else
         {
