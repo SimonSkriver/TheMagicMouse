@@ -36,4 +36,11 @@ public class PlayerMana : MonoBehaviour
 
         }
     }
+    public void FullMana()
+    {
+        currentMana = maxMana;
+        Debug.Log("Mana is now full: " + currentMana);
+        OnManaChanged?.Invoke(currentMana, maxMana);
+    }
+
 }

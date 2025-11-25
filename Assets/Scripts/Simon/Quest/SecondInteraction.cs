@@ -26,6 +26,7 @@ public class SecondInteraction : MonoBehaviour
     private PlayerController pc;
     private bool isTalking;
 
+
     void Awake()
     {
         pc = FindAnyObjectByType<PlayerController>();
@@ -62,7 +63,7 @@ public class SecondInteraction : MonoBehaviour
         else // When the dialogue is over
         {
             textDisplay.text = "";
-            manaOnPlayer.currentMana = 100f;
+            manaOnPlayer.FullMana();
             isTalking = false;
             anim.SetTrigger("BoxDisappear");
             continueButton.SetActive(false);
