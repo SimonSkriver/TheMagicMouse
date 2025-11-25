@@ -8,12 +8,14 @@ public class PlayerController : MonoBehaviour
     public SpriteRenderer sr;
     // public Animator anim; 
 
+    /*
     [Header("Audio")]
     public AudioSource jumpAudioSource;
     public AudioSource runAudioSource;
     public AudioClip[] jumpClips;
     public AudioClip runClip;
     private bool runClipPlaying;
+    */
 
     [Header("Movement settings")]
     [SerializeField] float moveSpeed = 5f;
@@ -69,7 +71,7 @@ public class PlayerController : MonoBehaviour
         HandleWallJump();
         HandleCoyoteTime();
         // HandleAnimations(); // flyttet til animations script
-        HandleAudio();
+        //HandleAudio();
     }
 
     void FixedUpdate()
@@ -91,17 +93,25 @@ public class PlayerController : MonoBehaviour
 
     void HandleJumping()
     {
-        if (jumpPressed && jumpsRemaining >= 2)
+        if (jumpPressed)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
-            jumpPressed = false;
-            jumpsRemaining--;
-        }
+            // Ground Jump
+            if (coyoteTimeCounter > 0)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpForce);
+                jumpsRemaining = maxJumps - 1;
+                Debug.Log("Ground Jump executed");
+            }
+            // Air Jump
+            else if (jumpsRemaining > 0)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocityX, secondJumpForce);
+                jumpsRemaining--;
+                Debug.Log($"Air Jump executed. Jumps remaining: {jumpsRemaining}");
+            }
 
-        else if (jumpPressed && jumpsRemaining < 2)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocityX, secondJumpForce);
             jumpPressed = false;
+            coyoteTimeCounter = 0;
         }
     }
 
@@ -122,10 +132,17 @@ public class PlayerController : MonoBehaviour
     {
         if (Keyboard.current.spaceKey.wasPressedThisFrame && isWallSliding)
         {
-            Debug.Log("Walljump called");
-            wallJumpDirection = isFacingRight ? -1 : 1;
-            rb.linearVelocity = new Vector2(wallJumpDirection * wallJumpPower.x, wallJumpPower.y);
+       
+            wallJumpDirection = transform.localScale.x > 0 ? -1 : 1;
+            
+            Vector2 force = new Vector2(wallJumpDirection * wallJumpPower.x, wallJumpPower.y);
+            rb.linearVelocity = force;
+            Debug.Log($"Walljump called. Direction: {wallJumpDirection}, Force: {force}");
+
             wallJumpLockTimer = wallJumpLockDuration;
+            
+            // Consume the jump input so HandleJumping doesn't fire an air jump immediately after
+            jumpPressed = false; 
         }
     }
 
@@ -153,13 +170,10 @@ public class PlayerController : MonoBehaviour
             if (coyoteTimeCounter > 0 || jumpsRemaining > 0)
             {
                 jumpPressed = true;
+                /*
                 jumpAudioSource.clip = jumpClips[Random.Range(0, jumpClips.Length)];
                 jumpAudioSource.Play();
-
-                if (!isGrounded && coyoteTimeCounter <= 0)
-                {
-                    jumpsRemaining--;
-                }
+                */
             }
         }
         else // When jump button is released
@@ -212,6 +226,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /*
     void HandleAudio()
     {
         if (isRunning && !runClipPlaying)
@@ -226,6 +241,7 @@ public class PlayerController : MonoBehaviour
             runClipPlaying = false;
         }
     }
+    */
 
     private void OnDrawGizmosSelected() 
     {

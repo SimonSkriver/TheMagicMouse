@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 29e364ed0756a894e97aa006bbd8b8e2
+guid: 5e7d65b89e3678a4f837ee13e05dd1e5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5478222131912809019
-    second: owl_purified_0
+      213: -6839038629787782482
+    second: lutedude_nolute_0
   - first:
-      213: 8273655873213181116
-    second: owl_purified_1
+      213: 3896462360334659846
+    second: lutedude_nolute_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: owl_purified_0
+      name: lutedude_nolute_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 2159
-        height: 3840
+        x: 1003
+        y: 24
+        width: 1110
+        height: 2040
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c567a2fef179f3b0800000000000000
-      internalID: -5478222131912809019
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: owl_purified_1
-      rect:
-        serializedVersion: 2
-        x: 2161
-        y: 0
-        width: 2159
-        height: 3840
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cbc22b45e2ee1d270800000000000000
-      internalID: 8273655873213181116
+      spriteID: ea2335ad99ad611a0800000000000000
+      internalID: -6839038629787782482
       vertices: []
       indices: 
       edges: []
@@ -163,7 +141,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: bbc6b4d696765fe43ae98cc8bb02663e
+    spriteID: 5ddfdd3a1f4ae964d8c1064416d499b6
     internalID: 0
     vertices: []
     indices: 
@@ -171,12 +149,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":2160.0,"y":3840.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      owl_purified_0: -5478222131912809019
-      owl_purified_1: 8273655873213181116
+      lutedude_nolute_0: -6839038629787782482
+      lutedude_nolute_1: 3896462360334659846
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

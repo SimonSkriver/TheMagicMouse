@@ -2,18 +2,19 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneLoader : MonoBehaviour
+public class PurificationFinale : MonoBehaviour
 {
     [SerializeField] string nextScene;
     public Animator transition;
-    [SerializeField] private float transitionDuration = 1f; //Overall duration of transition, which is adjustable
+    [SerializeField] private float transitionDuration = 1f; //Unified duration of transition, which is adjustable
     private float fadeAnimInSeconds = 1f; //duration of keyframed transition anim. NO TOUCHY!!
-
     
     void Start()
     {
         transition.speed = fadeAnimInSeconds / transitionDuration; //Set animator speed so that fade in plays at the specified rate
     }
+    
+    /*
     void OnTriggerEnter2D(Collider2D other) //check if player done did enter the scene loader
     {
         if (other.CompareTag("Player"))
@@ -22,6 +23,7 @@ public class SceneLoader : MonoBehaviour
             LoadNextScene();
         }
     }
+    */
 
     public void LoadNextScene() //loads next scene by starting the coroutine
     {
