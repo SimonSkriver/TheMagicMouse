@@ -15,12 +15,15 @@ public class FirstInteraction : MonoBehaviour
     private int index;
     public bool hasMet = false;
 
-    public InputActionAsset playerControls;
+    public InputActionAsset actionAsset;
+    private PlayerController pc;
+    public Rigidbody2D playerRB;
     public Animator anim;
     private bool isTalking;
 
     void Awake()
     {
+        pc = FindAnyObjectByType<PlayerController>();
     }
 
     void Update()
@@ -30,6 +33,7 @@ public class FirstInteraction : MonoBehaviour
             continueButton.SetActive(true);
         }
         HandlePlayerControls();
+        HandleDJ();
     }
 
     IEnumerator Type()
@@ -53,6 +57,7 @@ public class FirstInteraction : MonoBehaviour
         else // When the dialogue is over
         {
             textDisplay.text = "";
+            //dialogueBox.SetActive(false);
             anim.SetTrigger("BoxDisappear");
             continueButton.SetActive(false);
             isTalking = false;
@@ -65,9 +70,19 @@ public class FirstInteraction : MonoBehaviour
         if (other.CompareTag("Player") && !hasMet)
         {   
             isTalking = true;
+            //dialogueBox.SetActive(true);
             anim.SetTrigger("BoxAppear");
             StartCoroutine(Type());
+            playerRB.linearVelocity = new Vector2(0, 0);
             hasMet = true;
+        }
+    }
+
+    void HandleDJ()
+    {
+        if (hasMet)
+        {
+            pc.maxJumps = 2; 
         }
     }
 
@@ -75,11 +90,11 @@ public class FirstInteraction : MonoBehaviour
     {
         if (isTalking)
         {
-            playerControls.Disable();
+            actionAsset.Disable();
         }
         else
         {
-            playerControls.Enable(); 
+            actionAsset.Enable(); 
         }
     }
 }

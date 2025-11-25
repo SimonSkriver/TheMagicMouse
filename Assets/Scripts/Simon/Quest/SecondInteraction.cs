@@ -21,12 +21,14 @@ public class SecondInteraction : MonoBehaviour
     public SpriteRenderer sr;
 
     public Animator anim;
+    public InputActionAsset inputAsset;
     private PlayerMana manaOnPlayer;
-    public InputActionAsset playerControls;
+    private PlayerController pc;
     private bool isTalking;
 
     void Awake()
     {
+        pc = FindAnyObjectByType<PlayerController>();
         manaOnPlayer = FindAnyObjectByType<PlayerMana>();
     }
 
@@ -61,8 +63,8 @@ public class SecondInteraction : MonoBehaviour
         {
             textDisplay.text = "";
             manaOnPlayer.currentMana = 100f;
-            anim.SetTrigger("BoxDisappear");
             isTalking = false;
+            anim.SetTrigger("BoxDisappear");
             continueButton.SetActive(false);
         }
     }
@@ -71,6 +73,7 @@ public class SecondInteraction : MonoBehaviour
     {
         if (other.CompareTag("Player") && luteScript.playerHasLute)
         {
+            //dialogueBox.SetActive(true);
             anim.SetTrigger("BoxAppear");
             StartCoroutine(Type());
             Destroy(lute);
@@ -84,11 +87,11 @@ public class SecondInteraction : MonoBehaviour
     {
         if (isTalking)
         {
-            playerControls.Disable();
+            inputAsset.Disable();
         }
         else
         {
-            playerControls.Enable();
+            inputAsset.Enable();
         } 
     }
 }
