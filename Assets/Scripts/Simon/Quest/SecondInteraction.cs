@@ -19,6 +19,8 @@ public class SecondInteraction : MonoBehaviour
     public LuteItem luteScript;
     public Sprite[] sprites;
     public SpriteRenderer sr;
+    public AudioClip luteShred;
+    public AudioSource audioSource;
 
     public Animator anim;
     public InputActionAsset inputAsset;
@@ -81,6 +83,7 @@ public class SecondInteraction : MonoBehaviour
             isTalking = true;
             sr.sprite = sprites[1];
             luteScript.playerHasLute = false;
+            audioSource.PlayOneShot(luteShred);
         }
     }
 
