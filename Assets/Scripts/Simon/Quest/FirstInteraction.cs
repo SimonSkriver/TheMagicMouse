@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.InputSystem;
 
 public class FirstInteraction : MonoBehaviour
 {
@@ -14,7 +15,9 @@ public class FirstInteraction : MonoBehaviour
     private int index;
     public bool hasMet = false;
 
+    public InputActionAsset actionAsset;
     private PlayerController pc;
+    public Rigidbody2D playerRB;
     public Animator anim;
     private bool isTalking;
 
@@ -30,6 +33,7 @@ public class FirstInteraction : MonoBehaviour
             continueButton.SetActive(true);
         }
         HandlePlayerControls();
+        HandleDJ();
     }
 
     IEnumerator Type()
@@ -69,7 +73,16 @@ public class FirstInteraction : MonoBehaviour
             //dialogueBox.SetActive(true);
             anim.SetTrigger("BoxAppear");
             StartCoroutine(Type());
+            playerRB.linearVelocity = new Vector2(0, 0);
             hasMet = true;
+        }
+    }
+
+    void HandleDJ()
+    {
+        if (hasMet)
+        {
+            pc.maxJumps = 2; 
         }
     }
 
@@ -77,11 +90,11 @@ public class FirstInteraction : MonoBehaviour
     {
         if (isTalking)
         {
-            pc.enabled = false;
+            actionAsset.Disable();
         }
         else
         {
-            pc.enabled = true; 
+            actionAsset.Enable(); 
         }
     }
 }
