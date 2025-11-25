@@ -38,7 +38,7 @@ public class SFXHandler : MonoBehaviour
             if (sfx.animatorEventTag == tag && sfx.audioClip !=null)
             {
                 audioSource.pitch = Random.Range(0.8f, 1.2f);
-                audioSource.volume = Random.Range(0.8f, 1.2f);
+                audioSource.volume = Random.Range(0.8f, 1f);
                 audioSource.PlayOneShot(sfx.audioClip);
             }
         }
