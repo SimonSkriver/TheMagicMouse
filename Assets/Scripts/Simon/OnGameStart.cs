@@ -10,6 +10,8 @@ public class OnGameStart : MonoBehaviour
     public PlayerController pc;
     private bool buttonHasBeenPressed = false;
     public float secondsAfterButtonPress = 2f;
+    public AudioSource audioSource;
+    public AudioClip buttonClickSound;
 
     void Start()
     {
@@ -42,6 +44,7 @@ public class OnGameStart : MonoBehaviour
     {
         shouldMovePlayer = true;
         buttonHasBeenPressed = true;
+        audioSource.PlayOneShot(buttonClickSound);
         Destroy(Button);
         Debug.Log("You have pressed the button");
     }
