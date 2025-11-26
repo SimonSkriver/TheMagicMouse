@@ -1,6 +1,6 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <ui:VisualElement name="mana-bar-background" style="flex-grow: 1; width: 2%; height: 20%; background-color: rgba(0, 0, 0, 0.43); bottom: 2%; position: absolute; left: 1%; flex-direction: column-reverse; justify-content: flex-start;">
-        <ui:VisualElement name="mana-bar-fill" style="height: 0%; background-color: rgb(64, 129, 190);" />
+        <ui:VisualElement name="mana-bar-fill" style="height: 0%; background-color: rgba(71, 71, 71, 0); background-image: url(&quot;project://database/Assets/Sprites/mana%20(1).png?fileID=21300000&amp;guid=9c5c30a6307c6364db21163ce637622d&amp;type=3#mana (1)&quot;); -unity-slice-scale: 1.1px; -unity-slice-type: tiled;" />
     </ui:VisualElement>
     <ui:VisualElement name="top-bar" style="flex-grow: 1; position: absolute; top: -129px; width: 100%; height: 10%; background-color: rgb(0, 0, 0); display: flex;" />
     <ui:VisualElement name="bottom-bar" style="flex-grow: 1; position: absolute; top: auto; width: 100%; height: 10%; background-color: rgb(0, 0, 0); bottom: -129px; display: flex;" />
