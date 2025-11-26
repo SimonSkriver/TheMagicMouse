@@ -23,6 +23,7 @@ public class SecondInteraction : MonoBehaviour
     public AudioSource audioSource;
 
     public Animator anim;
+    public Animator owlAnim;
     public InputActionAsset inputAsset;
     private PlayerMana manaOnPlayer;
     private PlayerController pc;
@@ -68,6 +69,7 @@ public class SecondInteraction : MonoBehaviour
             manaOnPlayer.FullMana();
             isTalking = false;
             anim.SetTrigger("BoxDisappear");
+            owlAnim.SetTrigger("OwlFlyBy");
             continueButton.SetActive(false);
         }
     }
