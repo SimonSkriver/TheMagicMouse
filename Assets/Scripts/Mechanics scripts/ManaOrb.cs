@@ -23,7 +23,7 @@ public class ManaOrb : MonoBehaviour
                 // This is a safe way to prevent collecting the same orb multiple times.
                 GetComponent<Collider2D>().enabled = false;
                 //GetComponent<SpriteRenderer>().enabled = false;
-                Destroy(gameObject, 0.2f);
+                Destroy(gameObject);
             }
         }
     }
