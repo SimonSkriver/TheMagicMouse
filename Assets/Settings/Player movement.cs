@@ -127,6 +127,15 @@ public partial class @Playermovement: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Quit"",
+                    ""type"": ""Button"",
+                    ""id"": ""a58cd351-4e16-4675-9648-134bcfb6ace0"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -217,6 +226,17 @@ public partial class @Playermovement: IInputActionCollection2, IDisposable
                     ""action"": ""BigPurify"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""53539747-2014-4c49-9a44-94cc4c6c8abe"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Quit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -229,6 +249,7 @@ public partial class @Playermovement: IInputActionCollection2, IDisposable
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_SmallPurify = m_Player.FindAction("SmallPurify", throwIfNotFound: true);
         m_Player_BigPurify = m_Player.FindAction("BigPurify", throwIfNotFound: true);
+        m_Player_Quit = m_Player.FindAction("Quit", throwIfNotFound: true);
     }
 
     ~@Playermovement()
@@ -313,6 +334,7 @@ public partial class @Playermovement: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_SmallPurify;
     private readonly InputAction m_Player_BigPurify;
+    private readonly InputAction m_Player_Quit;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -340,6 +362,10 @@ public partial class @Playermovement: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/BigPurify".
         /// </summary>
         public InputAction @BigPurify => m_Wrapper.m_Player_BigPurify;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Quit".
+        /// </summary>
+        public InputAction @Quit => m_Wrapper.m_Player_Quit;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -378,6 +404,9 @@ public partial class @Playermovement: IInputActionCollection2, IDisposable
             @BigPurify.started += instance.OnBigPurify;
             @BigPurify.performed += instance.OnBigPurify;
             @BigPurify.canceled += instance.OnBigPurify;
+            @Quit.started += instance.OnQuit;
+            @Quit.performed += instance.OnQuit;
+            @Quit.canceled += instance.OnQuit;
         }
 
         /// <summary>
@@ -401,6 +430,9 @@ public partial class @Playermovement: IInputActionCollection2, IDisposable
             @BigPurify.started -= instance.OnBigPurify;
             @BigPurify.performed -= instance.OnBigPurify;
             @BigPurify.canceled -= instance.OnBigPurify;
+            @Quit.started -= instance.OnQuit;
+            @Quit.performed -= instance.OnQuit;
+            @Quit.canceled -= instance.OnQuit;
         }
 
         /// <summary>
@@ -469,5 +501,12 @@ public partial class @Playermovement: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnBigPurify(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Quit" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnQuit(InputAction.CallbackContext context);
     }
 }

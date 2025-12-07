@@ -6,16 +6,6 @@ public class PlayerController : MonoBehaviour
     [Header("Components")]
     public Rigidbody2D rb;
     public SpriteRenderer sr;
-    // public Animator anim; 
-
-    /*
-    [Header("Audio")]
-    public AudioSource jumpAudioSource;
-    public AudioSource runAudioSource;
-    public AudioClip[] jumpClips;
-    public AudioClip runClip;
-    private bool runClipPlaying;
-    */
 
     [Header("Movement settings")]
     [SerializeField] float moveSpeed = 5f;
@@ -53,8 +43,6 @@ public class PlayerController : MonoBehaviour
     private bool isWalled;
 
     private float targetGravity;
-    private bool isFacingRight = true;
-
 
     void Start()
     {
@@ -66,12 +54,9 @@ public class PlayerController : MonoBehaviour
         ApplyVariableGravity();
         CheckGrounded();
         CheckRunning();
-        // Flip(); //flyttet til animations script
         CheckWalled();
         HandleWallJump();
         HandleCoyoteTime();
-        // HandleAnimations(); // flyttet til animations script
-        //HandleAudio();
     }
 
     void FixedUpdate()
@@ -170,16 +155,17 @@ public class PlayerController : MonoBehaviour
             if (coyoteTimeCounter > 0 || jumpsRemaining > 0)
             {
                 jumpPressed = true;
-                /*
-                jumpAudioSource.clip = jumpClips[Random.Range(0, jumpClips.Length)];
-                jumpAudioSource.Play();
-                */
             }
         }
         else // When jump button is released
         {
             coyoteTimeCounter = 0;
         }
+    }
+
+    void OnEscape()
+    {
+        Application.Quit();
     }
 
     void CheckGrounded()
@@ -225,23 +211,6 @@ public class PlayerController : MonoBehaviour
             targetGravity = normalGravity;
         }
     }
-
-    /*
-    void HandleAudio()
-    {
-        if (isRunning && !runClipPlaying)
-        {
-            runClipPlaying = true;
-            runAudioSource.clip = runClip;
-            runAudioSource.Play();
-        }
-        else if (!isRunning)
-        {
-            runAudioSource.Pause();
-            runClipPlaying = false;
-        }
-    }
-    */
 
     private void OnDrawGizmosSelected() 
     {
