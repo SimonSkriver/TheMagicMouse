@@ -217,7 +217,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1693626855
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 17
   m_Sprite: {fileID: 8584986706017283902, guid: 557d9ce2c332e4d448378603ea59df5b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -245,7 +245,7 @@ MonoBehaviour:
   rb: {fileID: 7822954264791147308}
   sr: {fileID: 4823354142197390032}
   moveSpeed: 80
-  jumpForce: 120
+  jumpForce: 140
   secondJumpForce: 120
   jumpCutMultiplier: 0.2
   maxJumps: 1
@@ -394,7 +394,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.303
+  m_Volume: 0.206
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -582,6 +582,8 @@ MonoBehaviour:
     animatorEventTag: BigPurifyTwirl
   - audioClip: {fileID: 8300000, guid: 4dc96387650439643bf612390228d95a, type: 3}
     animatorEventTag: BigPurifyImpact
+  EasterEgg1: {fileID: 8300000, guid: 73ae004c5eab9b643927c71b62d74edf, type: 3}
+  EasterEgg2: {fileID: 8300000, guid: d2b0d0c7da356c345897f31f47c17ca6, type: 3}
 --- !u!70 &5335615004580937959
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
