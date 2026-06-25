@@ -195,9 +195,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4f765da0a82348400800000000000000
+      spriteID: 76ee7d2bba133d14ea62c76873175db2
       internalID: 325440641546151924
       vertices: []
       indices: 
@@ -215,19 +215,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":3840.0,"y":2160.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Credits_0: 325440641546151924
-      Credits_1: -7230797560680492228
-      Credits_10: 8797275395211412286
-      Credits_2: 1660878261141922055
-      Credits_3: 3408833089268186296
-      Credits_4: -4505729462688360816
-      Credits_5: 7564604414351219451
-      Credits_6: -8157575453700540238
-      Credits_7: -202475513557698636
-      Credits_8: 5436393710764927355
-      Credits_9: 3924323341162010572
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
