@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "QuestGame.slnx"
+    "dotnet.defaultSolution": "TheMagicMouse.slnx"
 }
